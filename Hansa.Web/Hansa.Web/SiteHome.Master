@@ -1,0 +1,1194 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteHome.master.cs" Inherits="Hansa.Web.SiteHome" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <style type="text/css">
+        .forNavBerClass {
+            color: blue;
+        }
+        /*.forNavBerClass span:hover {
+            color:#7dc217;
+        }*/
+    </style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Welcome to Hansa Management Ltd. </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <%--<link rel="apple-touch-icon" href="apple-touch-icon.png">--%>
+    <link rel="icon" href="Content/assets/images/PageImage/HansaLogo-Icon.png" />
+    <%--<link rel="icon" href="Content/assets/images/PageImage/UniqueGroupLogo-Icon.png" />--%>
+
+
+    <!-- Place favicon.ico in the root directory -->
+
+
+
+    <link rel="stylesheet" href="Content/assets/plugins/jquery.fancybox.css" type="text/css" media="screen" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--<script src="assets/css/font-awesome.min.css"></script>
+        <script src="assets/css/bootstrap.min.css"></script>-->
+
+    <link rel="stylesheet" href="Content/assets/css/style.css">
+    <script src="Content/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <script src="Content/assets/js/vendor/jquery-1.11.3.min.js"></script>
+
+    <%--     <script src="SimpleModalPopup/jquery.1.7.2.min.js"></script>
+    <script src="SimpleModalPopup/jquery-1.8.9-ui.js"></script>
+    <link href="SimpleModalPopup/jquery-ui.css.css" rel="stylesheet" />--%>
+
+
+
+    <header class="bodyheader" style="background-color: white" id="bdyhdr">
+        <div class="top-bar" id="topbar">
+            <nav class="navbar">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" title="" class="forNavBerClass"><span class="fa fa-envelope"></span><span class="forNavBerClass">info@unique-hansa.com</span></a></li>
+                          <%--  <li class="dropdown">
+                                <a href="#" title="" class="dropdown-toggle" data-toggle="dropdown"><span class="forNavBerClass">Languages: EN </span><span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" title="">AR</a></li>
+                                    <li><a href="#" title="">SP</a></li>
+                                </ul>
+                            </li>--%>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="LoginUI.aspx"><span class="fa fa-user"></span><span id="loginP" runat="server" class="forNavBerClass">LOGIN</span></a></li> 
+                           
+                            <li><a href="Registration.aspx"><span class="fa fa-users"></span><span id="RegisterUI" runat="server" class="forNavBerClass">REGISTER NOW</span></a></li>
+
+                            <li class="social-icons"><a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-linkedin"></span></a>
+                                <a href="#"><span class="fa fa-google-plus"></span></a>
+                                <a href="#"><span class="fa fa-youtube"></span></a>
+                                <a href="#"><span class="fa fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div class="header-bar" id="headerbar">
+            <nav class="navbar">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs_example_navbar_collapse_2">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <%-- <a class="navbar-logo" href="#" title="#"><img src="Content/assets/images/logo.png" border="0" alt=""></a>--%>
+
+
+
+                        <%--  <div style="width:450px;height:100px; float:right;">
+                            <p style="font-size: 30px; font-style: bold; color: #0033FF;">HANSA MANAGEMENT LIMITED</p>
+                        </div>
+                        <div style="clear:both;"></div>--%>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-1">
+
+                            <a class="nav-logo" href="Home.aspx" title="#"><%--<a class="navbar-logo" href="Home.aspx" title="#">--%>
+
+                                <img src="Content/assets/images/LogoImage/HANSALOGOFINAL.png" border="0" alt="HansaLogo" width="140px;" height="72px;" />
+
+                                <%--<img src="Content/assets/images/LogoImage/HansaLogo.jpg" border="0" alt="HansaLogo" width="170px;" height="72px;" />--%>
+
+                                <%--<img src="Content/assets/images/LogoImage/LogoGroup(2).png" border="0" alt="UniqueLogo" width="140px;" height="100px;" />--%>
+
+                            </a>
+                        </div>
+                        <%--<div class="col-lg-1"></div>--%>
+                        <div class="col-lg-9" style="text-align: left;">
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="collapse navbar-collapse" id="bs_example_navbar_collapse_2" runat="server">
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <%--                                <div class="row"> 
+                                    <div class="col-lg-12" style="text-align: center;">
+                                        <p style="font-size: 40px; font-weight: bold; color: black; font-family: Edwardian Script ITC;">Hansa Management Limited</p>
+                                    </div> 
+                            </div>--%>
+                            <%--<div class="collapse navbar-collapse" id="bs_example_navbar_collapse_2" runat="server">
+                                <ul class="nav navbar-nav navbar-right">
+                                   
+                                    <li><a href="Home.aspx" title="Home">HOME</a></li>
+                                    
+                                    <li><a href="About.aspx" title="ABOUT">ABOUT</a></li>
+
+                                    <li class="dropdown"><a href="#" title="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">SERVICES</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="SoftServicesWithSecondMaster.aspx">SOFT SERVICES</a></li>
+                                            <li><a href="HardServicesWithSecondMaster.aspx">HARD SERVICES</a></li>
+                                            <li><a href="PayPerUseWithSecondMaster.aspx">PAY PER USE</a></li>
+                                            <li><a href="RiskManagementWithSecondMaster.aspx">RISK MANAGEMENT</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown"><a href="#" title="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">CUSTOMER CORNER</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="blog.html">USER ID</a></li>
+                                            <li><a href="blog-post.html">PROJECT NAME</a></li>
+                                            <li><a href="blog.html">OBSERVATIONS</a></li>
+                                            <li><a href="blog-post.html">FEEDBACK</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown"><a href="#" title="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" onclick=" setHeightOfContact();">CONTACT US</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="blog.html">FAQ</a></li>
+                                            <li><a href="blog-post.html">E-MAIL</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="dropdown">
+                                        <a href="#" title="" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-search"></span></a>
+                                        <div class="dropdown-menu search-dropdown">
+                                            <form action="">
+                                                <div class="input-group search-form">
+                                                    <input type="text" class="form-control" placeholder="Search">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-theme" type="button"><span class="fa fa-search"></span></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>--%>
+                        </div>
+                        <%--<div class="col-lg-1"></div>--%>
+                        <div class="col-lg-2" style="text-align:right;">
+
+                            <a class="nav-logo" href="Home.aspx" title="#">
+                                <%-- <img src="Content/assets/images/LogoImage/HansaLogo.jpg" border="0" alt="HansaLogo" width="180px;" height="100px;" />--%>
+                               <%-- <img src="Content/assets/images/LogoImage/LogoGroup(2).png" border="0" alt="UniqueLogo" width="112px;" height="70px;" />--%>
+                                 <img src="Content/assets/images/LogoImage/Ugnewlogotransparent.png" border="0" alt="UniqueLogo" width="112px;" height="70px;" />
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <%--    <div class="row">
+                        <div class="col-sm-12" style="text-align: center;">
+                            
+                            <span style="font-size: 55px; font-weight: bold; color: black; font-family: 'Roboto Slab';">HANSA Management Limited</span>
+                        </div>
+                    </div>--%>
+
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <div class="main-slider" id="hsForMainSliders" runat="server">
+        <ul>
+            <li>
+                <%--<img src="Content/assets/images/Sliders/ACROPOLIS%20day.jpg" />--%>
+                <img src="Content/assets/images/Sliders/img1.jpg" alt="" />
+            </li>
+
+            <li>
+                <img src="Content/assets/images/Sliders/facilities-management.jpg" alt="" />
+            </li>
+
+            <li>
+                <img src="Content/assets/images/Sliders/FM_Cofely01567_HD-bandeau.jpg" alt="" />
+            </li>
+
+
+            <%--      <li>
+ 
+                 <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt%201.jpg" />
+            </li>
+            <li>
+ 
+                <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt2.jpg" />
+
+            </li>
+            <li>
+                 
+                 <img src="Content/assets/images/Sliders/BORAK%20ZOHIR%20TOWER_01a.jpg" />
+
+            </li>
+            
+             <li>
+  
+                <img src="Content/assets/images/Sliders/BORAK%20ZOHIR%20TOWER_02b.jpg" />
+
+            </li>--%>
+        </ul>
+
+        <%-- <ul>
+            <li>
+                <img src="Content/assets/images/Sliders/ACROPOLIS%20day.jpg" /> 
+                <img src="Content/assets/images/Sliders/ACROPOLIS(1).jpg" /> 
+            </li>
+            
+           <li> 
+               <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt%201%20night.jpg" />  
+               <img src="Content/assets/images/Sliders/ACROPOLIS(1).jpg" /> 
+           </li>
+
+             <li> 
+                 <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt%201.jpg" /> 
+                 <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt%201%20night.jpg" /> 
+           </li>
+              
+
+             <li>
+                 <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt2.jpg" />
+                 <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt%201.jpg" />
+            </li>
+            <li>
+                <img src="Content/assets/images/Sliders/BORAK%20ZOHIR%20TOWER_01a.jpg" />
+                <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt2.jpg" />
+
+            </li>
+            <li>
+                <img src="Content/assets/images/Sliders/BORAK%20ZOHIR%20TOWER_02b.jpg" />
+                 <img src="Content/assets/images/Sliders/BORAK%20ZOHIR%20TOWER_01a.jpg" />
+
+            </li>
+            
+             <li>
+                 <img src="Content/assets/images/Sliders/ACROPOLIS%20day.jpg" /> 
+                <img src="Content/assets/images/Sliders/BORAK%20ZOHIR%20TOWER_02b.jpg" />
+
+            </li> 
+             
+        </ul>--%>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            //alert("ddd");
+            $('#showUp').click(function () {
+                $('html,body').animate({ scrollTop: 5 }, 'slow');
+
+            });
+
+
+            $('#loginP').click(function () {
+
+                var vP = $('#loginP').text();
+                //  alert(vP);
+
+                if (vP == "LOG OUT") { 
+                    //$.ajax({
+                    //    async: true,
+                    //    type: "POST",
+                    //    url: "WebService1.asmx/CheckLoginOut",//url: "/Home.aspx/CheckLoginOut",//url: "/LoginUI.aspx/CheckLoginOut",   
+                    //    contentType: "application/json; charset=utf-8",
+                    //    data: JSON.stringify({ vP: vP }),
+                    //    cash: false,
+                    //    success: function (msg) {
+                    //        alert('in success of getcount');
+                    //        $(location).attr('href', 'Home.aspx')
+
+                    //    },
+                    //    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                           
+                    //    }
+                    //});
+                }
+                
+            });
+
+
+            $('#RegisterUI').click(function () {
+
+                var vP = $('#loginP').text();
+                if (vP == "LOG OUT") {
+                    alert('You Should Be Log Out.');
+                    return false;
+                }
+            });
+
+
+        });
+
+        function setOfCareerPage()
+        {
+            $(location).attr('href','Career.aspx')
+        }
+
+        function setHeightOfContact() {
+            $('html,body').animate({ scrollTop: 4600 }, 'slow');
+            // alert("ggg");
+
+        }
+
+        function setLinkOfAbout() {
+            $(location).attr('href', 'About.aspx')
+
+            //$('html,body').animate({ scrollTop: 1200 }, 'slow');
+        }
+
+        function setCSR() {
+            //alert('dfdf');
+            // $(location).attr('href', 'About.aspx')
+            $(location).attr('href', 'CSR.aspx')
+
+            //var viewableOffset = $('#hsForMainSliders').offset().top * 3 - 60 + $('#ContentPlaceHolder1_backgrnd').height() + $('#backgroundTxt').height() + $('#blnkRow').height() + $('#allcolapseblePanel').height();// + $("#bdyhdr").height();//$('#ContentPlaceHolder1_backgrnd').offset().top + $('#ContentPlaceHolder1_backgrnd').outerHeight(true);//$('#ContentPlaceHolder1_backgrnd').position().top;
+
+            //// alert(viewableOffset);
+
+            //$('html,body').animate({ scrollTop: viewableOffset }, 'slow');
+
+        }
+
+        function setObjective() {
+
+            $(location).attr('href', 'Objective.aspx')
+            //var viewableOffset = $('#hsForMainSliders').offset().top * 3 - 60 + $('#ContentPlaceHolder1_backgrnd').height() + $('#backgroundTxt').height() + $('#blnkRow').height();// + $("#bdyhdr").height();//$('#ContentPlaceHolder1_backgrnd').offset().top + $('#ContentPlaceHolder1_backgrnd').outerHeight(true);//$('#ContentPlaceHolder1_backgrnd').position().top;
+
+            //// alert(viewableOffset);
+
+            ////collapseTwo id="collapseOne" class="panel-collapse collapse in"
+            //$('#collapseOne2').removeClass("panel-collapse collapse in");
+            //$('#collapseOne2').addClass("panel-collapse collapse");
+            //$('#collapseOne2').attr("aria-expanded", "false");
+            //$("#headingOne2 h4 a").attr("aria-expanded", "false");
+            //$('#headingOne2 h4 a').addClass("collapsed");
+            //// class="collapsed"
+
+            //$('#collapseOne1').removeClass("panel-collapse collapse");
+            //$('#collapseOne1').addClass("panel-collapse collapse in");
+            //$('#collapseOne1').attr("aria-expanded", "true");
+            //// aria-expanded="true"
+            //$('#headingOne1 h4 a').removeClass("collapsed");
+            //$('#headingOne1 h4 a').attr("aria-expanded", "true");
+
+            //$('#collapseOne3').removeClass("panel-collapse collapse in");
+            //$('#collapseOne3').addClass("panel-collapse collapse");
+            //$('#collapseOne3').attr("aria-expanded", "false");
+            //$("#headingOne3 h4 a").attr("aria-expanded", "false");
+            //$('#headingOne3 h4 a').addClass("collapsed");
+
+            //$('#collapseOne4').removeClass("panel-collapse collapse in");
+            //$('#collapseOne4').addClass("panel-collapse collapse");
+            //$('#collapseOne4').attr("aria-expanded", "false");
+            //$("#headingOne4 h4 a").attr("aria-expanded", "false");
+            //$('#headingOne4 h4 a').addClass("collapsed");
+
+
+            //$('html,body').animate({ scrollTop: viewableOffset }, 'slow');
+        }
+
+
+        function setGoals() {
+
+            $(location).attr('href', 'Goals.aspx')
+
+            //var viewableOffset = $('#hsForMainSliders').offset().top * 3 - 60 + $('#ContentPlaceHolder1_backgrnd').height() + $('#backgroundTxt').height() + $('#blnkRow').height();// + $("#bdyhdr").height();//$('#ContentPlaceHolder1_backgrnd').offset().top + $('#ContentPlaceHolder1_backgrnd').outerHeight(true);//$('#ContentPlaceHolder1_backgrnd').position().top;
+
+            //// alert(viewableOffset);
+
+            // //collapseTwo id="collapseOne" class="panel-collapse collapse in"
+            // $('#collapseOne1').removeClass("panel-collapse collapse in");
+            // $('#collapseOne1').addClass("panel-collapse collapse");
+            // $('#collapseOne1').attr("aria-expanded", "false");
+            // $("#headingOne1 h4 a").attr("aria-expanded", "false");
+            // $('#headingOne1 h4 a').addClass("collapsed");
+            //// class="collapsed"
+
+            // $('#collapseOne2').removeClass("panel-collapse collapse");
+            // $('#collapseOne2').addClass("panel-collapse collapse in");
+            // $('#collapseOne2').attr("aria-expanded", "true");
+            // // aria-expanded="true"
+            // $('#headingOne2 h4 a').removeClass("collapsed");
+            // $('#headingOne2 h4 a').attr("aria-expanded", "true");
+
+            // $('#collapseOne3').removeClass("panel-collapse collapse in");
+            // $('#collapseOne3').addClass("panel-collapse collapse");
+            // $('#collapseOne3').attr("aria-expanded", "false");
+            // $("#headingOne3 h4 a").attr("aria-expanded", "false");
+            // $('#headingOne3 h4 a').addClass("collapsed");
+
+            // $('#collapseOne4').removeClass("panel-collapse collapse in");
+            // $('#collapseOne4').addClass("panel-collapse collapse");
+            // $('#collapseOne4').attr("aria-expanded", "false");
+            // $("#headingOne4 h4 a").attr("aria-expanded", "false");
+            // $('#headingOne4 h4 a').addClass("collapsed");
+
+
+
+
+            //$('html,body').animate({ scrollTop: viewableOffset }, 'slow');
+        }
+
+        function setVision() {
+
+            $(location).attr('href', 'Vision.aspx')
+
+            //var viewableOffset = $('#hsForMainSliders').offset().top * 3 - 60 + $('#ContentPlaceHolder1_backgrnd').height() + $('#backgroundTxt').height() + $('#blnkRow').height();// + $("#bdyhdr").height();//$('#ContentPlaceHolder1_backgrnd').offset().top + $('#ContentPlaceHolder1_backgrnd').outerHeight(true);//$('#ContentPlaceHolder1_backgrnd').position().top;
+
+            //// alert(viewableOffset);
+
+            ////collapseTwo id="collapseOne" class="panel-collapse collapse in"
+            ////collapseTwo id="collapseOne" class="panel-collapse collapse in"
+            //$('#collapseOne1').removeClass("panel-collapse collapse in");
+            //$('#collapseOne1').addClass("panel-collapse collapse");
+            //$('#collapseOne1').attr("aria-expanded", "false");
+            //$("#headingOne1 h4 a").attr("aria-expanded", "false");
+            //$('#headingOne1 h4 a').addClass("collapsed");
+            //// class="collapsed"
+
+            //$('#collapseOne3').removeClass("panel-collapse collapse");
+            //$('#collapseOne3').addClass("panel-collapse collapse in");
+            //$('#collapseOne3').attr("aria-expanded", "true");
+            //// aria-expanded="true"
+            //$('#headingOne3 h4 a').removeClass("collapsed");
+            //$('#headingOne3 h4 a').attr("aria-expanded", "true");
+
+            //$('#collapseOne2').removeClass("panel-collapse collapse in");
+            //$('#collapseOne2').addClass("panel-collapse collapse");
+            //$('#collapseOne2').attr("aria-expanded", "false");
+            //$("#headingOne2 h4 a").attr("aria-expanded", "false");
+            //$('#headingOne2 h4 a').addClass("collapsed");
+
+            //$('#collapseOne4').removeClass("panel-collapse collapse in");
+            //$('#collapseOne4').addClass("panel-collapse collapse");
+            //$('#collapseOne4').attr("aria-expanded", "false");
+            //$("#headingOne4 h4 a").attr("aria-expanded", "false");
+            //$('#headingOne4 h4 a').addClass("collapsed");
+
+
+
+            //$('html,body').animate({ scrollTop: viewableOffset }, 'slow');
+        }
+
+        function setMission() {
+
+            $(location).attr('href', 'Mission.aspx')
+
+            //var viewableOffset = $('#hsForMainSliders').offset().top * 3 - 60 + $('#ContentPlaceHolder1_backgrnd').height() + $('#backgroundTxt').height() + $('#blnkRow').height();// + $("#bdyhdr").height();//$('#ContentPlaceHolder1_backgrnd').offset().top + $('#ContentPlaceHolder1_backgrnd').outerHeight(true);//$('#ContentPlaceHolder1_backgrnd').position().top;
+
+            //// alert(viewableOffset);
+
+            //// alert(viewableOffset);
+
+            ////collapseTwo id="collapseOne" class="panel-collapse collapse in"
+            //$('#collapseOne1').removeClass("panel-collapse collapse in");
+            //$('#collapseOne1').addClass("panel-collapse collapse");
+            //$('#collapseOne1').attr("aria-expanded", "false");
+            //$("#headingOne1 h4 a").attr("aria-expanded", "false");
+            //$('#headingOne1 h4 a').addClass("collapsed");
+            //// class="collapsed"
+
+            //$('#collapseOne4').removeClass("panel-collapse collapse");
+            //$('#collapseOne4').addClass("panel-collapse collapse in");
+            //$('#collapseOne4').attr("aria-expanded", "true");
+            //// aria-expanded="true"
+            //$('#headingOne4 h4 a').removeClass("collapsed");
+            //$('#headingOne4 h4 a').attr("aria-expanded", "true");
+
+            //$('#collapseOne3').removeClass("panel-collapse collapse in");
+            //$('#collapseOne3').addClass("panel-collapse collapse");
+            //$('#collapseOne3').attr("aria-expanded", "false");
+            //$("#headingOne3 h4 a").attr("aria-expanded", "false");
+            //$('#headingOne3 h4 a').addClass("collapsed");
+
+            //$('#collapseOne2').removeClass("panel-collapse collapse in");
+            //$('#collapseOne2').addClass("panel-collapse collapse");
+            //$('#collapseOne2').attr("aria-expanded", "false");
+            //$("#headingOne2 h4 a").attr("aria-expanded", "false");
+            //$('#headingOne2 h4 a').addClass("collapsed");
+
+
+            //$('html,body').animate({ scrollTop: viewableOffset }, 'slow');
+        }
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <asp:Label ID="lblShowNavID" runat="server" Text=""></asp:Label>
+
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+
+
+
+    </form>
+
+    <%-- <div class="container" id="hsForOngoingProjects" runat="server">
+        <div class="page-section">
+            <div class="custom-controls pull-right">
+                <span id="slider-prev"></span>
+                <span id="slider-next"></span>
+            </div>
+            <h2 class="with-borderline"><span>ONGOING PROJECTS</span><em></em></h2>
+            <ul class="slider-gallery clearfix"> 
+                  <li class="template">
+                    <img src="Content/assets/images/Sliders/ONGOING/Unique%20Heights/Heights%201.jpg" alt="">
+
+                    <div class="overlay-data right">
+                        <div class="overlay-inner">
+                            <div>
+                                <h4>UNIQUE HEIGHTS</h4>  
+                            </div>
+                        </div>
+                        <a href="Content/assets/images/Sliders/ONGOING/Unique%20Heights/Heights%201.jpg" title="" class="zoom fancybox" rel="group2"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>
+                </li>
+
+                <li class="template">
+                    <img src="Content/assets/images/Sliders/ONGOING/Borak%20Zahir%20Tower/ZOHIR%20TOWER_02b.jpg" alt="">
+
+                    <div class="overlay-data right">
+                        <div class="overlay-inner">
+                            <div> 
+                                <h4>BORAK ZAHIR TOWER</h4>   
+                            </div>
+                        </div>
+                        <a href="Content/assets/images/Sliders/ONGOING/Borak%20Zahir%20Tower/ZOHIR%20TOWER_02b.jpg" title="" class="zoom fancybox" rel="group2"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>
+                </li>
+
+
+                  <li class="template">
+                    <img src="Content/assets/images/Sliders/ONGOING/Borak%20Mahnur/BORAK%20MEHNUR%20opt%201%20night.jpg" alt="">
+
+                    <div class="overlay-data right"> 
+                        <div class="overlay-inner">
+                            <div> 
+                                <h4>BORAK MEHNUR</h4>  
+                            </div>
+                        </div>
+                        <a href="Content/assets/images/Sliders/ONGOING/Borak%20Mahnur/BORAK%20MEHNUR%20opt%201%20night.jpg" title="" class="zoom fancybox" rel="group2"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>
+                </li>
+
+
+                <li class="template">
+                    <img src="Content/assets/images/Sliders/ONGOING/Borak%20Park%20Valley/Park%20Valley%20Image.jpg" alt="">
+                    <div class="overlay-data right">
+                        <div class="overlay-inner">
+                            <div>
+                                <h4>BORAK PARK VALLEY</h4> 
+                            </div>
+                        </div>
+                        <a href="Content/assets/images/Sliders/ONGOING/Borak%20Park%20Valley/Park%20Valley%20Image.jpg" title="" class="zoom fancybox" rel="group2"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>
+                </li>
+                <li class="business">
+                    <img src="Content/assets/images/Sliders/ONGOING/Banani%20DCC%20Unique%20Complex/150304_DCC_B.RGB_color.jpg" alt="">
+                    <div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                                <h4>Banani DCC Unique Complex</h4>
+                            </div>
+                        </div>
+                        <a href="Content/assets/images/Sliders/ONGOING/Banani%20DCC%20Unique%20Complex/150304_DCC_B.RGB_color.jpg" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>
+                </li>
+
+                <li class="business">
+                    <img src="Content/assets/images/Sliders/ONGOING/Borak%20Biz%20Center/FINAL70DilkushaPic.jpg" alt="">
+                    <div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                                <h4>Borak Biz Center</h4>
+                            </div>
+                        </div>
+
+                        <a href="Content/assets/images/Sliders/ONGOING/Borak%20Biz%20Center/FINAL70DilkushaPic.jpg" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>
+                </li>
+                <li class="business">
+                    <img src="Content/assets/images/Sliders/ONGOING/Borak%20Chowdhury%20Sprinkle/Sprinkle-01_View01-1.jpg" alt="">
+                    <div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                                <h4>Borak Chowdhury Sprinkle</h4>
+                            </div>
+                        </div>
+
+                        <a href="Content/assets/images/Sliders/ONGOING/Borak%20Chowdhury%20Sprinkle/Sprinkle-01_View01-1.jpg" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>
+                </li> 
+            </ul>
+        </div>
+    </div>--%>
+
+    <!-- /.container -->
+
+    <%--  <div class="container" id="hsForUpCommingProjects" runat="server">
+         <div class="page-section">
+            <div class="custom-controls pull-right">
+                <span id="slider-prev1"></span>
+                <span id="slider-next1"></span>
+            </div>
+            <h2 class="with-borderline"><span>UPCOMING PROJECTS</span><em></em></h2>
+            <ul class="slider-gallery1 clearfix">
+
+                 <li class="logo">
+                    <img src="Content/assets/images/Sliders/ONGOING/Acropolis/rendering(1).jpg" alt="">
+                    <div class="overlay-data top">
+                        <div class="overlay-inner">
+                            <div>
+                                <h4>ACROPOLIS</h4>
+
+                            </div>
+                        </div>
+                        <a href="Content/assets/images/Sliders/ONGOING/Acropolis/rendering(1).jpg" title="" class="zoom fancybox" rel="group1a"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>
+                </li>
+
+                <li class="logo">
+                    <img src="Content/assets/images/Sliders/UPCOMING/at%20Rampura/View-1.jpg" alt=""> 
+                    <div class="overlay-data top">
+                        <div class="overlay-inner">
+                            <div>
+                                <h4>RAMPURA</h4>
+
+                            </div>
+                        </div>
+                        <a href="Content/assets/images/Sliders/UPCOMING/at%20Rampura/View-1.jpg" title="" class="zoom fancybox" rel="group1a"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>
+                </li>
+                <li class="template">
+                    <img src="Content/assets/images/Sliders/UPCOMING/Minerva/Map_324.jpg" alt="">
+                    <div class="overlay-data right">
+                        <div class="overlay-inner">
+                            <div>
+                                 
+                                <h4>MINERVA</h4>
+                            </div>
+                        </div>
+                        <a href="Content/assets/images/Sliders/UPCOMING/Minerva/Map_324.jpg" title="" class="zoom fancybox" rel="group2"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>
+                </li>
+                <li class="business">
+                    <img src="Content/assets/images/Sliders/UPCOMING/Westin%20South%20Plaza/1.jpg" alt="">
+                    <div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                                 
+                                <h4>WESTIN SOUTH PLAZA</h4>
+                            </div>
+                        </div>
+                        <a href="Content/assets/images/Sliders/UPCOMING/Westin%20South%20Plaza/1.jpg" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>
+                </li>
+
+                <li class="business">
+                    <img src="Content/assets/images/Sliders/UPCOMING/Borak%20Green%20Living/CAM%201(2)copy.png" alt="">
+                    <div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                             
+                                <h4>BORAK GREEN LIVING</h4>
+                            </div>
+                        </div>
+
+                        <a href="Content/assets/images/Sliders/UPCOMING/Borak%20Green%20Living/CAM%201(2)copy.png" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>
+                </li>
+             
+
+            </ul>
+        </div>
+    </div>--%>
+
+
+
+    <%-- client not slides --%>
+
+
+    <div class="container" id="Div1" runat="server">
+        <div class="page-section">
+            <div class="custom-controls pull-right">
+                <span id="slider-prev2"></span>
+                <span id="slider-next2"></span>
+            </div>
+            <%--            <h2 class="with-borderline"><span>OUR CLIENTS</span><em></em></h2>--%>
+            <h2><span>OUR CLIENTS</span><em></em></h2>
+            <ul class="slider-gallery2 clearfix" style="background: #f8f8f8;">
+
+
+                <li class="business">
+                    <img src="Content/assets/ClientLogoPNG/ClientBoraklogo.png" alt="" />
+                    <%--<div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                             
+                                <h4>BORAK REALSTATE</h4>
+                            </div>
+                        </div>
+
+                        <a href="Content/assets/ClientLogoPNG/ClientBoraklogo.png" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>--%>
+                </li>
+
+
+
+                <li class="logo">
+                    <img src="Content/assets/ClientLogoPNG/UniqueHotel.png" alt="" />
+                    <%--<div class="overlay-data top">
+                        <div class="overlay-inner">
+                            <div>
+                                
+                                <h4>UNIQUE HOTEL & RESORTS</h4>
+
+                            </div>
+                        </div>
+                        <a href="Content/assets/ClientLogoPNG/UniqueHotel.png" title="" class="zoom fancybox" rel="group1a"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>--%>
+                </li>
+                <li class="template">
+                    <img src="Content/assets/ClientLogoPNG/UniqueProperties.png" alt="" />
+                    <%--<div class="overlay-data right">
+                        <div class="overlay-inner">
+                            <div>
+                                 
+                                <h4>UNIQUE PROPERTIES</h4>
+                            </div>
+                        </div>
+                        <a href="Content/assets/ClientLogoPNG/UniqueProperties.png" title="" class="zoom fancybox" rel="group2"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>--%>
+                </li>
+                <li class="business">
+                    <div>
+                        <br />
+                        <br />
+                    </div>
+                    <img src="Content/assets/ClientLogoPNG/AmaderSomoy.png" alt="" />
+                    <%--<div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                                 
+                                <h4>AMADER SHOMOY</h4>
+                            </div>
+                        </div>
+                        <a href="Content/assets/ClientLogoPNG/AmaderSomoy.png" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>--%>
+                </li>
+
+                <li class="business">
+                    <div>
+                        <br />
+                        <br />
+                    </div>
+
+                    <img src="Content/assets/ClientLogoPNG/Update.png" alt="" />
+                    <%--<div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                             
+                                <h4>UPDATE</h4>
+                            </div>
+                        </div>
+
+                        <a href="Content/assets/ClientLogoPNG/Update.png" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>--%>
+                </li>
+
+                <li class="business">
+                    <img src="Content/assets/ClientLogoPNG/BanglaTel.png" alt="" />
+                    <%--<div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                             
+                                <h4>BANGLA TEL</h4>
+                            </div>
+                        </div>
+
+                        <a href="Content/assets/ClientLogoPNG/BanglaTel.png" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>--%>
+                </li>
+               <%-- <li class="business">
+                    <img src="Content/assets/ClientLogoPNG/BorakShiping.png" alt="" />
+                    <div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                             
+                                <h4>BORAK SHIPING</h4>
+                            </div>
+                        </div>
+
+                        <a href="Content/assets/ClientLogoPNG/BorakShiping.png" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>
+                </li>--%>
+               <%-- <li class="business">
+                    <img src="Content/assets/ClientLogoPNG/Umcpl.png" alt="" />
+                    <div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                             
+                                <h4>UMCPL</h4>
+                            </div>
+                        </div>
+
+                        <a href="Content/assets/ClientLogoPNG/Umcpl.png" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>
+                </li>--%>
+                <li class="business">
+                    <img src="Content/assets/ClientLogoPNG/UniqueCeramics.png" alt="" />
+                    <%--<div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                             
+                                <h4>UNIQUE CERAMICS</h4>
+                            </div>
+                        </div>
+
+                        <a href="Content/assets/ClientLogoPNG/UniqueCeramics.png" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>--%>
+                </li>
+                <li class="business">
+                    <img src="Content/assets/ClientLogoPNG/UniqueEastern.png" alt="" />
+                    <%--<div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                             
+                                <h4>UNIQUE EASTERN</h4>
+                            </div>
+                        </div>
+
+                        <a href="Content/assets/ClientLogoPNG/UniqueEastern.png" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>--%>
+                </li>
+                <li class="business">
+                    <img src="Content/assets/ClientLogoPNG/UniqueShareMngmnt.png" alt="" />
+                    <%--<div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                             
+                                <h4>UNIQUE SHARE</h4>
+                            </div>
+                        </div>
+
+                        <a href="Content/assets/ClientLogoPNG/UniqueShareMngmnt.png" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>--%>
+                </li>
+                <li class="business">
+                    <img src="Content/assets/ClientLogoPNG/UniqueVocationalTraining.png" alt="" />
+                    <%--<div class="overlay-data bottom">
+                        <div class="overlay-inner">
+                            <div>
+                             
+                                <h4>UNIQUE VOCATIONAL TRAINING</h4>
+                            </div>
+                        </div>
+
+                        <a href="Content/assets/ClientLogoPNG/UniqueVocationalTraining.png" title="" class="zoom fancybox" rel="group3"><span class="fa fa-plus"></span>
+
+                        </a>
+                    </div>--%>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="green-bar" style="text-align: center">
+        <h2>
+            <span style="font-family: 'Brush Script MT'; font-size: 45px; text-align: center">Service Is Religion</span>
+        </h2>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container" id="shFooter" runat="server">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div id="map_canvas" style="width: 350px; height: 225px;">
+                    </div>
+
+                    <p class="social-icons">
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-linkedin"></span></a>
+                        <a href="#"><span class="fa fa-google-plus"></span></a>
+                        <a href="#"><span class="fa fa-youtube"></span></a>
+                        <a href="#"><span class="fa fa-instagram"></span></a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h2>Contact info</h2>
+                    <ul class="related-icons-list">
+                        <li><span class="fa fa-map-marker"></span>Unique Oval, 45, Kamal Ataturk Avenue,<br>
+                            Banani, Dhaka-1213, Bangladesh </li>
+                        <li><span class="fa fa-phone"></span>Tel: 88-02-9885116-23
+                            <br>
+                            Fax: 88-02-8823392</li>
+                        <li><span class="fa fa-envelope"></span><a href="mailto:info@unique-hansa.com" title="">info@unique-hansa.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h2>Subscribe</h2>
+                    <p>Please subscribe to our newsletter.</p>
+                    <form action="">
+                        <div class="input-group input-group-lg subscription-form">
+                            <input type="text" id="txtEmail" class="form-control" placeholder="Email">
+                            <span class="input-group-btn">
+                                <button id="btnsendMail" class="btn btn-theme" type="button" onclick="sendingMail();"><span class="fa fa-check"></span></button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-11">
+                    <br />
+                </div>
+                <div class="col-sm-1">
+                    <span style="color: white">GO-UP</span>
+
+                    <button id="showUp" runat="server" class="btn btn-theme" type="button"><span class="fa fa-arrow-circle-up"></span></button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- container -->
+    </footer>
+    <div class="footer-bottom">&copy;Powered by - IT Department, Unique Group. </div>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script>window.jQuery || document.write('<script src="Content/assets/js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+    <script src="Content/assets/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="Content/assets/plugins/jquery.fancybox.pack.js"></script>
+    <script src="Content/assets/plugins/jquery.bxslider.min.js"></script>
+    <script src="Content/assets/js/plugins.js"></script>
+    <script src="Content/assets/js/main.js"></script>
+    <script>
+        $(function () {
+            //$('.slider-gallery').bxSlider({
+            //    auto: true,
+            //    slideWidth: 370,
+            //    slideMargin: $(window).width() > 767 ? 30 : 0,
+            //    pager: false,
+            //    minSlides: $(window).width() > 767 ? 3 : 1,
+            //    maxSlides: $(window).width() > 767 ? 3 : 1,
+            //    moveSlides: 1,
+            //    nextSelector: '#slider-next',
+            //    prevSelector: '#slider-prev',
+            //    nextText: '&#xf105;',
+            //    prevText: '&#xf104;',
+            //})
+
+            //$('.slider-gallery1').bxSlider({
+            //    auto: true,
+            //    slideWidth: 370,
+            //    slideMargin: $(window).width() > 767 ? 30 : 0,
+            //    pager: false,
+            //    minSlides: $(window).width() > 767 ? 3 : 1,
+            //    maxSlides: $(window).width() > 767 ? 3 : 1,
+            //    moveSlides: 1,
+            //    nextSelector: '#slider-next1',
+            //    prevSelector: '#slider-prev1',
+            //    nextText: '&#xf105;',
+            //    prevText: '&#xf104;',
+            //})
+
+            $('.slider-gallery2').bxSlider({
+                auto: true,
+                slideWidth: 200,
+                slideMargin: $(window).width() > 767 ? 30 : 0,
+                pager: false,
+                minSlides: $(window).width() > 767 ? 8 : 1,
+                maxSlides: $(window).width() > 767 ? 8 : 1,
+                moveSlides: 1,
+                nextSelector: '#slider-next2',
+                prevSelector: '#slider-prev2',
+                nextText: '&#xf105;',
+                prevText: '&#xf104;',
+            })
+
+            $('.main-slider ul').bxSlider({
+                auto: true,
+                pager: false,
+                nextText: '&#xf105;',
+                prevText: '&#xf104;',
+            })
+
+            $(".fancybox").fancybox();
+            // $(".fancybox1").fancybox();
+
+
+        })
+
+
+        //$(function () {
+        //    $('.slider-gallery').bxSlider({
+        //        auto: true,
+        //        slideWidth: 370,
+        //        slideMargin: $(window).width() > 767 ? 30 : 0,
+        //        pager: false,
+        //        minSlides: $(window).width() > 767 ? 3 : 1,
+        //        maxSlides: $(window).width() > 767 ? 3 : 1,
+        //        moveSlides: 1,
+        //        nextSelector: '#slider-next',
+        //        prevSelector: '#slider-prev',
+        //        nextText: '&#xf105;',
+        //        prevText: '&#xf104;',
+        //    })
+        //    $('.main-slider ul').bxSlider({
+        //        auto: true,
+        //        pager: false,
+        //        nextText: '&#xf105;',
+        //        prevText: '&#xf104;',
+        //    })
+
+        //    $(".fancybox").fancybox();
+        //})
+
+    </script>
+
+    <!-- Start Code For Google Map -->
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIrlPtnZgEk&sensor=false">
+
+    </script>
+
+    <%--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places">
+
+</script>--%>
+
+
+    <script type="text/javascript">
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(success);
+        } else {
+            alert("Geo Location is not supported on your current browser!");
+        }
+        function success(position) {
+            var lat = 23.7935971;//position.coords.latitude; //23.7935971; current//
+            var long = 90.409369;//position.coords.longitude;// 90.409369; current//
+            var city = position.coords.locality;
+            var myLatlng = new google.maps.LatLng(lat, long);
+            var myOptions = {
+                center: myLatlng,
+                zoom: 16,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                title: "lat: " + lat + " long: " + long
+            });
+
+            marker.setMap(map);
+            // to show  alert    Address
+
+            // var infowindow = new google.maps.InfoWindow({ content: "<b>User Address</b><br/> Latitude:" + lat + "<br /> Longitude:" + long + "" });
+            // infowindow.open(map, marker);
+        }
+    </script>
+    <!-- End Code For Google Map -->
+
+</body>
+</html>

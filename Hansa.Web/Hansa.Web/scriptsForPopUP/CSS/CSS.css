@@ -1,0 +1,44 @@
+﻿body
+{
+    font-family : Arial;
+     font-size: 10pt;
+}
+.modalBackground {
+	background-color:Black;
+	filter:alpha(opacity=90);
+	opacity:0.8;
+}
+
+.modalPopupForNotification{
+	background-color:#FFFFFF;
+	border-width:3px;
+	border-style:solid;
+	border-color:black;
+	padding-top:10px;
+	padding-left:10px;
+	width:180px;
+	height:150px;
+}
+
+.modalPopup {
+	background-color:#FFFFFF;
+	border-width:3px;
+	border-style:solid;
+	border-color:black;
+	padding-top:10px;
+	padding-left:10px;
+	width:100px;
+	height:150px;
+}
+
+/*Different design for show notification */
+.modalPopup1 {
+	background-color:#FFFFFF;
+	border-width:3px;
+	border-style:solid;
+	border-color:black;
+	padding-top:10px;
+	padding-left:10px;
+	width:180px;
+	height:150px;
+}

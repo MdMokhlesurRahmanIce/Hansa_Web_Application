@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HansaDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="UserActivationLink">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="ActivationCode" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="SecurityQuestion" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Answer" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="EntryDate" Type="datetime" />
+          <Property Name="FirstName" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="CapchaCode" Type="varchar" MaxLength="200" />
+          <Property Name="Phone" Type="varchar" MaxLength="200" />
+          <Property Name="Address" Type="varchar" MaxLength="200" />
+          <Property Name="CompanyName" Type="varchar" MaxLength="200" />
+          <Property Name="IPAddress" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="UserRatings">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="50" />
+          <Property Name="Rating" Type="int" />
+          <Property Name="Comments" Type="nvarchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="Group">
+          <Key>
+            <PropertyRef Name="GroupCode" />
+          </Key>
+          <Property Name="GroupCode" Type="int" Nullable="false" />
+          <Property Name="GroupName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="GroupRole">
+          <Key>
+            <PropertyRef Name="GroupCode" />
+            <PropertyRef Name="RoleCode" />
+          </Key>
+          <Property Name="GroupCode" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="RoleCode" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'HansaSqlInjection.UserAccess.GroupUsers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="GroupUsers">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="GroupCode" />
+          </Key>
+          <Property Name="UserID" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="GroupCode" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ParentID" Type="int" />
+          <Property Name="Caption" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="ToolTip" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="Location" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ModuleID" Type="int" Nullable="false" />
+          <Property Name="MenuOrder" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="RoleCode" />
+          </Key>
+          <Property Name="RoleCode" Type="int" Nullable="false" />
+          <Property Name="RoleName" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="RoleDescription" Type="varchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RoleDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="MenuID" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="RoleCode" Type="int" Nullable="false" />
+          <Property Name="CanSelect" Type="bit" Nullable="false" />
+          <Property Name="CanInsert" Type="bit" Nullable="false" />
+          <Property Name="CanUpdate" Type="bit" Nullable="false" />
+          <Property Name="CanDelete" Type="bit" Nullable="false" />
+          <Property Name="CanSend" Type="bit" />
+          <Property Name="CanCheck" Type="bit" />
+          <Property Name="CanApprove" Type="bit" />
+          <Property Name="CanPreview" Type="bit" Nullable="false" />
+          <Property Name="AllChk" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="SecurityQuestion" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Answer" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="StatusID" Type="int" />
+          <Property Name="EntryUserID" Type="int" />
+          <Property Name="EntryDate" Type="datetime" />
+          <Property Name="UpdateUserID" Type="int" />
+          <Property Name="UpdateDate" Type="datetime" />
+          <Property Name="IsAdmin" Type="bit" />
+          <Property Name="ThanaID" Type="smallint" />
+          <Property Name="DivisionID" Type="smallint" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="FirstName" Type="varchar" MaxLength="200" />
+          <Property Name="LastName" Type="varchar" MaxLength="200" />
+          <Property Name="CapchaCode" Type="varchar" MaxLength="200" />
+          <Property Name="Phone" Type="varchar" MaxLength="200" />
+          <Property Name="Address" Type="varchar" MaxLength="200" />
+          <Property Name="CompanyName" Type="varchar" MaxLength="200" />
+          <Property Name="IPAddress" Type="varchar" MaxLength="200" />
+          <Property Name="DefaultAllViwerForCommon" Type="bit" />
+        </EntityType>
+        <Association Name="FK_RoleDetail_Role">
+          <End Role="Role" Type="Self.Role" Multiplicity="1" />
+          <End Role="RoleDetail" Type="Self.RoleDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="RoleCode" />
+            </Principal>
+            <Dependent Role="RoleDetail">
+              <PropertyRef Name="RoleCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HansaDBModelStoreContainer">
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserActivationLink" EntityType="Self.UserActivationLink" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserRatings" EntityType="Self.UserRatings" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Group" EntityType="Self.Group" Schema="UserAccess" store:Type="Tables" />
+          <EntitySet Name="GroupRole" EntityType="Self.GroupRole" Schema="UserAccess" store:Type="Tables" />
+          <EntitySet Name="Menu" EntityType="Self.Menu" Schema="UserAccess" store:Type="Tables" />
+          <EntitySet Name="Role" EntityType="Self.Role" Schema="UserAccess" store:Type="Tables" />
+          <EntitySet Name="RoleDetail" EntityType="Self.RoleDetail" Schema="UserAccess" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="UserAccess" store:Type="Tables" />
+          <EntitySet Name="GroupUsers" EntityType="Self.GroupUsers" store:Type="Tables" store:Schema="UserAccess">
+            <DefiningQuery>SELECT 
+    [GroupUsers].[UserID] AS [UserID], 
+    [GroupUsers].[GroupCode] AS [GroupCode]
+    FROM [UserAccess].[GroupUsers] AS [GroupUsers]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_RoleDetail_Role" Association="Self.FK_RoleDetail_Role">
+            <End Role="Role" EntitySet="Role" />
+            <End Role="RoleDetail" EntitySet="RoleDetail" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HansaDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Group">
+          <Key>
+            <PropertyRef Name="GroupCode" />
+          </Key>
+          <Property Name="GroupCode" Type="Int32" Nullable="false" />
+          <Property Name="GroupName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="GroupRole">
+          <Key>
+            <PropertyRef Name="GroupCode" />
+            <PropertyRef Name="RoleCode" />
+          </Key>
+          <Property Name="GroupCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RoleCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="ParentID" Type="Int32" />
+          <Property Name="Caption" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ToolTip" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Location" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ModuleID" Type="Int32" Nullable="false" />
+          <Property Name="MenuOrder" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="RoleCode" />
+          </Key>
+          <Property Name="RoleCode" Type="Int32" Nullable="false" />
+          <Property Name="RoleName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RoleDescription" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="RoleDetail" Relationship="Self.FK_RoleDetail_Role" FromRole="Role" ToRole="RoleDetail" />
+        </EntityType>
+        <EntityType Name="RoleDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="MenuID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RoleCode" Type="Int32" Nullable="false" />
+          <Property Name="CanSelect" Type="Boolean" Nullable="false" />
+          <Property Name="CanInsert" Type="Boolean" Nullable="false" />
+          <Property Name="CanUpdate" Type="Boolean" Nullable="false" />
+          <Property Name="CanDelete" Type="Boolean" Nullable="false" />
+          <Property Name="CanSend" Type="Boolean" />
+          <Property Name="CanCheck" Type="Boolean" />
+          <Property Name="CanApprove" Type="Boolean" />
+          <Property Name="CanPreview" Type="Boolean" Nullable="false" />
+          <Property Name="AllChk" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Role" Relationship="Self.FK_RoleDetail_Role" FromRole="RoleDetail" ToRole="Role" />
+        </EntityType>
+        <EntityType Name="GroupUsers">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="GroupCode" />
+          </Key>
+          <Property Name="UserID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="GroupCode" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_RoleDetail_Role">
+          <End Role="Role" Type="Self.Role" Multiplicity="1" />
+          <End Role="RoleDetail" Type="Self.RoleDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="RoleCode" />
+            </Principal>
+            <Dependent Role="RoleDetail">
+              <PropertyRef Name="RoleCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HansaDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Employee" EntityType="Self.Employee" />
+          <EntitySet Name="Group" EntityType="Self.Group" />
+          <EntitySet Name="GroupRole" EntityType="Self.GroupRole" />
+          <EntitySet Name="Menu" EntityType="Self.Menu" />
+          <EntitySet Name="Role" EntityType="Self.Role" />
+          <EntitySet Name="RoleDetail" EntityType="Self.RoleDetail" />
+          <EntitySet Name="GroupUsers" EntityType="Self.GroupUsers" />
+          <AssociationSet Name="FK_RoleDetail_Role" Association="Self.FK_RoleDetail_Role">
+            <End Role="Role" EntitySet="Role" />
+            <End Role="RoleDetail" EntitySet="RoleDetail" />
+          </AssociationSet>
+          <EntitySet Name="UserRatings" EntityType="HansaDBModel.UserRatings" />
+          <EntitySet Name="User" EntityType="HansaDBModel.User" />
+          <EntitySet Name="UserActivationLink" EntityType="HansaDBModel.UserActivationLink" />
+        </EntityContainer>
+        <EntityType Name="UserRatings">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rating" Type="Int32" />
+          <Property Name="Comments" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="SecurityQuestion" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Answer" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="StatusID" Type="Int32" />
+          <Property Name="EntryUserID" Type="Int32" />
+          <Property Name="EntryDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int32" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <Property Name="IsAdmin" Type="Boolean" />
+          <Property Name="ThanaID" Type="Int16" />
+          <Property Name="DivisionID" Type="Int16" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="FirstName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="LastName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CapchaCode" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CompanyName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="IPAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="DefaultAllViwerForCommon" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="UserActivationLink">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ActivationCode" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="SecurityQuestion" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Answer" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="EntryDate" Type="DateTime" Precision="3" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CapchaCode" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CompanyName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="IPAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HansaDBModelStoreContainer" CdmEntityContainer="HansaDBEntities">
+          <EntitySetMapping Name="Employee">
+            <EntityTypeMapping TypeName="HansaDBModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Group">
+            <EntityTypeMapping TypeName="HansaDBModel.Group">
+              <MappingFragment StoreEntitySet="Group">
+                <ScalarProperty Name="GroupCode" ColumnName="GroupCode" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GroupRole">
+            <EntityTypeMapping TypeName="HansaDBModel.GroupRole">
+              <MappingFragment StoreEntitySet="GroupRole">
+                <ScalarProperty Name="GroupCode" ColumnName="GroupCode" />
+                <ScalarProperty Name="RoleCode" ColumnName="RoleCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Menu">
+            <EntityTypeMapping TypeName="HansaDBModel.Menu">
+              <MappingFragment StoreEntitySet="Menu">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="Caption" ColumnName="Caption" />
+                <ScalarProperty Name="ToolTip" ColumnName="ToolTip" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+                <ScalarProperty Name="MenuOrder" ColumnName="MenuOrder" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Role">
+            <EntityTypeMapping TypeName="HansaDBModel.Role">
+              <MappingFragment StoreEntitySet="Role">
+                <ScalarProperty Name="RoleCode" ColumnName="RoleCode" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="RoleDescription" ColumnName="RoleDescription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RoleDetail">
+            <EntityTypeMapping TypeName="HansaDBModel.RoleDetail">
+              <MappingFragment StoreEntitySet="RoleDetail">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+                <ScalarProperty Name="RoleCode" ColumnName="RoleCode" />
+                <ScalarProperty Name="CanSelect" ColumnName="CanSelect" />
+                <ScalarProperty Name="CanInsert" ColumnName="CanInsert" />
+                <ScalarProperty Name="CanUpdate" ColumnName="CanUpdate" />
+                <ScalarProperty Name="CanDelete" ColumnName="CanDelete" />
+                <ScalarProperty Name="CanSend" ColumnName="CanSend" />
+                <ScalarProperty Name="CanCheck" ColumnName="CanCheck" />
+                <ScalarProperty Name="CanApprove" ColumnName="CanApprove" />
+                <ScalarProperty Name="CanPreview" ColumnName="CanPreview" />
+                <ScalarProperty Name="AllChk" ColumnName="AllChk" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GroupUsers">
+            <EntityTypeMapping TypeName="HansaDBModel.GroupUsers">
+              <MappingFragment StoreEntitySet="GroupUsers">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="GroupCode" ColumnName="GroupCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserRatings">
+            <EntityTypeMapping TypeName="HansaDBModel.UserRatings">
+              <MappingFragment StoreEntitySet="UserRatings">
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="Rating" ColumnName="Rating" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User">
+            <EntityTypeMapping TypeName="HansaDBModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="DefaultAllViwerForCommon" ColumnName="DefaultAllViwerForCommon" />
+                <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="CapchaCode" ColumnName="CapchaCode" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="DivisionID" ColumnName="DivisionID" />
+                <ScalarProperty Name="ThanaID" ColumnName="ThanaID" />
+                <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+                <ScalarProperty Name="EntryUserID" ColumnName="EntryUserID" />
+                <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+                <ScalarProperty Name="SecurityQuestion" ColumnName="SecurityQuestion" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserActivationLink">
+            <EntityTypeMapping TypeName="HansaDBModel.UserActivationLink">
+              <MappingFragment StoreEntitySet="UserActivationLink">
+                <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="CapchaCode" ColumnName="CapchaCode" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+                <ScalarProperty Name="SecurityQuestion" ColumnName="SecurityQuestion" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="ActivationCode" ColumnName="ActivationCode" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

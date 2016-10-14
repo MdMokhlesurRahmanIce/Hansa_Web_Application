@@ -1,0 +1,1496 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MSCaptcha.4.0.4250.31585.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:MSCaptcha.Fakes.ShimCaptchaControl">
+            <summary>Shim type of MSCaptcha.CaptchaControl</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.#ctor(MSCaptcha.CaptchaControl)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.Bind(System.ComponentModel.IComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.Bind(System.Web.UI.IAttributeAccessor)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.Bind(System.Web.UI.IControlBuilderAccessor)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.Bind(System.Web.UI.IControlDesignerAccessor)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.Bind(System.Web.UI.IDataBindingsAccessor)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.Bind(System.Web.UI.IExpressionsAccessor)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.Bind(System.Web.UI.INamingContainer)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.Bind(System.Web.UI.IParserAccessor)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.Bind(System.Web.UI.IPostBackDataHandler)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.Bind(System.Web.UI.IUrlResolutionService)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.Bind(System.Web.UI.IValidator)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaControl.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ArithmeticFunctionGet">
+            <summary>Sets the shim of CaptchaControl.get_ArithmeticFunction()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ArithmeticFunctionSetCaptchaControlarithmeticOperation">
+            <summary>Sets the shim of CaptchaControl.set_ArithmeticFunction(arithmeticOperation value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ArithmeticGet">
+            <summary>Sets the shim of CaptchaControl.get_Arithmetic()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ArithmeticSetBoolean">
+            <summary>Sets the shim of CaptchaControl.set_Arithmetic(Boolean value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.BackColorGet">
+            <summary>Sets the shim of CaptchaControl.get_BackColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.BackColorSetColor">
+            <summary>Sets the shim of CaptchaControl.set_BackColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CacheStrategyGet">
+            <summary>Sets the shim of CaptchaControl.get_CacheStrategy()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CacheStrategySetCaptchaControlcacheType">
+            <summary>Sets the shim of CaptchaControl.set_CacheStrategy(cacheType value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CalculateMD5HashString">
+            <summary>Sets the shim of CaptchaControl.CalculateMD5Hash(String input)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CalculateSHA1HashString">
+            <summary>Sets the shim of CaptchaControl.CalculateSHA1Hash(String input)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CalculateSHA256HashString">
+            <summary>Sets the shim of CaptchaControl.CalculateSHA256Hash(String input)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaBackgroundNoiseGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaBackgroundNoise()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaBackgroundNoiseSetCaptchaImagebackgroundNoiseLevel">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaBackgroundNoise(backgroundNoiseLevel value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaCharsGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaChars()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaCharsSetString">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaChars(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaFontGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaFont()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaFontSetString">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaFont(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaFontWarpingGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaFontWarping()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaFontWarpingSetCaptchaImagefontWarpFactor">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaFontWarping(fontWarpFactor value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaHeightGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaHeight()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaHeightSetInt32">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaHeight(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaLengthGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaLength()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaLengthSetInt32">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaLength(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaLineNoiseGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaLineNoise()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaLineNoiseSetCaptchaImagelineNoiseLevel">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaLineNoise(lineNoiseLevel value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaMaxTimeoutGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaMaxTimeout()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaMaxTimeoutSetInt32">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaMaxTimeout(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaMinTimeoutGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaMinTimeout()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaMinTimeoutSetInt32">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaMinTimeout(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaWidthGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaWidth()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CaptchaWidthSetInt32">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaWidth(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CheckCaptchaString">
+            <summary>Sets the shim of CaptchaControl.CheckCaptcha(String userEntry)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ClientHashMethodGet">
+            <summary>Sets the shim of CaptchaControl.get_ClientHashMethod()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ClientHashMethodSetCaptchaControlclientHashingAlgorithm">
+            <summary>Sets the shim of CaptchaControl.set_ClientHashMethod(clientHashingAlgorithm value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ClientKeyGet">
+            <summary>Sets the shim of CaptchaControl.get_ClientKey()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ClientKeySetString">
+            <summary>Sets the shim of CaptchaControl.set_ClientKey(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.Constructor">
+            <summary>Sets the shim of CaptchaControl.CaptchaControl()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CssStyle">
+            <summary>Sets the shim of CaptchaControl.CssStyle()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CustomValidatorErrorMessageGet">
+            <summary>Sets the shim of CaptchaControl.get_CustomValidatorErrorMessage()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.CustomValidatorErrorMessageSetString">
+            <summary>Sets the shim of CaptchaControl.set_CustomValidatorErrorMessage(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.EnabledGet">
+            <summary>Sets the shim of CaptchaControl.get_Enabled()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.EnabledSetBoolean">
+            <summary>Sets the shim of CaptchaControl.set_Enabled(Boolean value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.EncryptKeyString">
+            <summary>Sets the shim of CaptchaControl.EncryptKey(String originalValue)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ErrorInputTooFastGet">
+            <summary>Sets the shim of CaptchaControl.get_ErrorInputTooFast()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ErrorInputTooFastSetString">
+            <summary>Sets the shim of CaptchaControl.set_ErrorInputTooFast(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ErrorInputTooSlowGet">
+            <summary>Sets the shim of CaptchaControl.get_ErrorInputTooSlow()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ErrorInputTooSlowSetString">
+            <summary>Sets the shim of CaptchaControl.set_ErrorInputTooSlow(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ErrorMessageSystemWebUIIValidatorget">
+            <summary>Sets the shim of CaptchaControl.System.Web.UI.IValidator.get_ErrorMessage()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ErrorMessageSystemWebUIIValidatorsetString">
+            <summary>Sets the shim of CaptchaControl.System.Web.UI.IValidator.set_ErrorMessage(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.FontColorGet">
+            <summary>Sets the shim of CaptchaControl.get_FontColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.FontColorSetColor">
+            <summary>Sets the shim of CaptchaControl.set_FontColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.GenerateNewCaptcha">
+            <summary>Sets the shim of CaptchaControl.GenerateNewCaptcha()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.GetCachedCaptchaString">
+            <summary>Sets the shim of CaptchaControl.GetCachedCaptcha(String guid)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.HtmlColorColor">
+            <summary>Sets the shim of CaptchaControl.HtmlColor(Color color)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ImageTagGet">
+            <summary>Sets the shim of CaptchaControl.get_ImageTag()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ImageTagSetString">
+            <summary>Sets the shim of CaptchaControl.set_ImageTag(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.IsDesignModeGet">
+            <summary>Sets the shim of CaptchaControl.get_IsDesignMode()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.IsValidSystemWebUIIValidatorget">
+            <summary>Sets the shim of CaptchaControl.System.Web.UI.IValidator.get_IsValid()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.IsValidSystemWebUIIValidatorsetBoolean">
+            <summary>Sets the shim of CaptchaControl.System.Web.UI.IValidator.set_IsValid(Boolean value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.LineColorGet">
+            <summary>Sets the shim of CaptchaControl.get_LineColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.LineColorSetColor">
+            <summary>Sets the shim of CaptchaControl.set_LineColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.LoadControlStateObject">
+            <summary>Sets the shim of CaptchaControl.LoadControlState(Object state)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.NoiseColorGet">
+            <summary>Sets the shim of CaptchaControl.get_NoiseColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.NoiseColorSetColor">
+            <summary>Sets the shim of CaptchaControl.set_NoiseColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.OnInitEventArgs">
+            <summary>Sets the shim of CaptchaControl.OnInit(EventArgs e)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.OnPreRenderEventArgs">
+            <summary>Sets the shim of CaptchaControl.OnPreRender(EventArgs e)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.OnUnloadEventArgs">
+            <summary>Sets the shim of CaptchaControl.OnUnload(EventArgs e)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.RemoveCachedCaptchaString">
+            <summary>Sets the shim of CaptchaControl.RemoveCachedCaptcha(String guid)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.RenderHtmlTextWriter">
+            <summary>Sets the shim of CaptchaControl.Render(HtmlTextWriter output)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.SaveControlState">
+            <summary>Sets the shim of CaptchaControl.SaveControlState()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.SystemWebUIIPostBackDataHandlerLoadPostDataStringNameValueCollection">
+            <summary>Sets the shim of CaptchaControl.System.Web.UI.IPostBackDataHandler.LoadPostData(String postDataKey, NameValueCollection values)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.SystemWebUIIPostBackDataHandlerRaisePostDataChangedEvent">
+            <summary>Sets the shim of CaptchaControl.System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.SystemWebUIIValidatorValidate">
+            <summary>Sets the shim of CaptchaControl.System.Web.UI.IValidator.Validate()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.UserValidatedGet">
+            <summary>Sets the shim of CaptchaControl.get_UserValidated()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.UserValidatedSetBoolean">
+            <summary>Sets the shim of CaptchaControl.set_UserValidated(Boolean value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ValidateCaptchaString">
+            <summary>Sets the shim of CaptchaControl.ValidateCaptcha(String userEntry)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ValidationGroupGet">
+            <summary>Sets the shim of CaptchaControl.get_ValidationGroup()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.ValidationGroupSetString">
+            <summary>Sets the shim of CaptchaControl.set_ValidationGroup(String value)</summary>
+        </member>
+        <member name="T:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ArithmeticFunctionGet">
+            <summary>Sets the shim of CaptchaControl.get_ArithmeticFunction()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ArithmeticFunctionSetCaptchaControlarithmeticOperation">
+            <summary>Sets the shim of CaptchaControl.set_ArithmeticFunction(arithmeticOperation value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ArithmeticGet">
+            <summary>Sets the shim of CaptchaControl.get_Arithmetic()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ArithmeticSetBoolean">
+            <summary>Sets the shim of CaptchaControl.set_Arithmetic(Boolean value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.BackColorGet">
+            <summary>Sets the shim of CaptchaControl.get_BackColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.BackColorSetColor">
+            <summary>Sets the shim of CaptchaControl.set_BackColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CacheStrategyGet">
+            <summary>Sets the shim of CaptchaControl.get_CacheStrategy()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CacheStrategySetCaptchaControlcacheType">
+            <summary>Sets the shim of CaptchaControl.set_CacheStrategy(cacheType value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CalculateMD5HashString">
+            <summary>Sets the shim of CaptchaControl.CalculateMD5Hash(String input)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CalculateSHA1HashString">
+            <summary>Sets the shim of CaptchaControl.CalculateSHA1Hash(String input)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CalculateSHA256HashString">
+            <summary>Sets the shim of CaptchaControl.CalculateSHA256Hash(String input)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaBackgroundNoiseGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaBackgroundNoise()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaBackgroundNoiseSetCaptchaImagebackgroundNoiseLevel">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaBackgroundNoise(backgroundNoiseLevel value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaCharsGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaChars()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaCharsSetString">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaChars(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaFontGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaFont()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaFontSetString">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaFont(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaFontWarpingGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaFontWarping()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaFontWarpingSetCaptchaImagefontWarpFactor">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaFontWarping(fontWarpFactor value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaHeightGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaHeight()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaHeightSetInt32">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaHeight(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaLengthGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaLength()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaLengthSetInt32">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaLength(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaLineNoiseGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaLineNoise()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaLineNoiseSetCaptchaImagelineNoiseLevel">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaLineNoise(lineNoiseLevel value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaMaxTimeoutGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaMaxTimeout()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaMaxTimeoutSetInt32">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaMaxTimeout(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaMinTimeoutGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaMinTimeout()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaMinTimeoutSetInt32">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaMinTimeout(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaWidthGet">
+            <summary>Sets the shim of CaptchaControl.get_CaptchaWidth()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CaptchaWidthSetInt32">
+            <summary>Sets the shim of CaptchaControl.set_CaptchaWidth(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CheckCaptchaString">
+            <summary>Sets the shim of CaptchaControl.CheckCaptcha(String userEntry)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ClientHashMethodGet">
+            <summary>Sets the shim of CaptchaControl.get_ClientHashMethod()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ClientHashMethodSetCaptchaControlclientHashingAlgorithm">
+            <summary>Sets the shim of CaptchaControl.set_ClientHashMethod(clientHashingAlgorithm value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ClientKeyGet">
+            <summary>Sets the shim of CaptchaControl.get_ClientKey()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ClientKeySetString">
+            <summary>Sets the shim of CaptchaControl.set_ClientKey(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CssStyle">
+            <summary>Sets the shim of CaptchaControl.CssStyle()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CustomValidatorErrorMessageGet">
+            <summary>Sets the shim of CaptchaControl.get_CustomValidatorErrorMessage()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.CustomValidatorErrorMessageSetString">
+            <summary>Sets the shim of CaptchaControl.set_CustomValidatorErrorMessage(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.EnabledGet">
+            <summary>Sets the shim of CaptchaControl.get_Enabled()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.EnabledSetBoolean">
+            <summary>Sets the shim of CaptchaControl.set_Enabled(Boolean value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.EncryptKeyString">
+            <summary>Sets the shim of CaptchaControl.EncryptKey(String originalValue)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ErrorInputTooFastGet">
+            <summary>Sets the shim of CaptchaControl.get_ErrorInputTooFast()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ErrorInputTooFastSetString">
+            <summary>Sets the shim of CaptchaControl.set_ErrorInputTooFast(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ErrorInputTooSlowGet">
+            <summary>Sets the shim of CaptchaControl.get_ErrorInputTooSlow()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ErrorInputTooSlowSetString">
+            <summary>Sets the shim of CaptchaControl.set_ErrorInputTooSlow(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ErrorMessageSystemWebUIIValidatorget">
+            <summary>Sets the shim of CaptchaControl.System.Web.UI.IValidator.get_ErrorMessage()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ErrorMessageSystemWebUIIValidatorsetString">
+            <summary>Sets the shim of CaptchaControl.System.Web.UI.IValidator.set_ErrorMessage(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.FontColorGet">
+            <summary>Sets the shim of CaptchaControl.get_FontColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.FontColorSetColor">
+            <summary>Sets the shim of CaptchaControl.set_FontColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.GenerateNewCaptcha">
+            <summary>Sets the shim of CaptchaControl.GenerateNewCaptcha()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.GetCachedCaptchaString">
+            <summary>Sets the shim of CaptchaControl.GetCachedCaptcha(String guid)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.HtmlColorColor">
+            <summary>Sets the shim of CaptchaControl.HtmlColor(Color color)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ImageTagGet">
+            <summary>Sets the shim of CaptchaControl.get_ImageTag()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ImageTagSetString">
+            <summary>Sets the shim of CaptchaControl.set_ImageTag(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.IsDesignModeGet">
+            <summary>Sets the shim of CaptchaControl.get_IsDesignMode()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.IsValidSystemWebUIIValidatorget">
+            <summary>Sets the shim of CaptchaControl.System.Web.UI.IValidator.get_IsValid()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.IsValidSystemWebUIIValidatorsetBoolean">
+            <summary>Sets the shim of CaptchaControl.System.Web.UI.IValidator.set_IsValid(Boolean value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.LineColorGet">
+            <summary>Sets the shim of CaptchaControl.get_LineColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.LineColorSetColor">
+            <summary>Sets the shim of CaptchaControl.set_LineColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.LoadControlStateObject">
+            <summary>Sets the shim of CaptchaControl.LoadControlState(Object state)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.NoiseColorGet">
+            <summary>Sets the shim of CaptchaControl.get_NoiseColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.NoiseColorSetColor">
+            <summary>Sets the shim of CaptchaControl.set_NoiseColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.OnInitEventArgs">
+            <summary>Sets the shim of CaptchaControl.OnInit(EventArgs e)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.OnPreRenderEventArgs">
+            <summary>Sets the shim of CaptchaControl.OnPreRender(EventArgs e)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.OnUnloadEventArgs">
+            <summary>Sets the shim of CaptchaControl.OnUnload(EventArgs e)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.RemoveCachedCaptchaString">
+            <summary>Sets the shim of CaptchaControl.RemoveCachedCaptcha(String guid)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.RenderHtmlTextWriter">
+            <summary>Sets the shim of CaptchaControl.Render(HtmlTextWriter output)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.SaveControlState">
+            <summary>Sets the shim of CaptchaControl.SaveControlState()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.SystemWebUIIPostBackDataHandlerLoadPostDataStringNameValueCollection">
+            <summary>Sets the shim of CaptchaControl.System.Web.UI.IPostBackDataHandler.LoadPostData(String postDataKey, NameValueCollection values)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.SystemWebUIIPostBackDataHandlerRaisePostDataChangedEvent">
+            <summary>Sets the shim of CaptchaControl.System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.SystemWebUIIValidatorValidate">
+            <summary>Sets the shim of CaptchaControl.System.Web.UI.IValidator.Validate()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.UserValidatedGet">
+            <summary>Sets the shim of CaptchaControl.get_UserValidated()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.UserValidatedSetBoolean">
+            <summary>Sets the shim of CaptchaControl.set_UserValidated(Boolean value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ValidateCaptchaString">
+            <summary>Sets the shim of CaptchaControl.ValidateCaptcha(String userEntry)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ValidationGroupGet">
+            <summary>Sets the shim of CaptchaControl.get_ValidationGroup()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaControl.AllInstances.ValidationGroupSetString">
+            <summary>Sets the shim of CaptchaControl.set_ValidationGroup(String value)</summary>
+        </member>
+        <member name="T:MSCaptcha.Fakes.ShimCaptchaImage">
+            <summary>Shim type of MSCaptcha.CaptchaImage</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaImage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaImage.#ctor(MSCaptcha.CaptchaImage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaImage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimCaptchaImage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AddLineGraphicsRectangle">
+            <summary>Sets the shim of CaptchaImage.AddLine(Graphics graphics1, Rectangle rect)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AddNoiseGraphicsRectangle">
+            <summary>Sets the shim of CaptchaImage.AddNoise(Graphics graphics1, Rectangle rect)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.ArithmeticFunctionGet">
+            <summary>Sets the shim of CaptchaImage.get_ArithmeticFunction()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.ArithmeticFunctionSetCaptchaImagearithmeticOperation">
+            <summary>Sets the shim of CaptchaImage.set_ArithmeticFunction(arithmeticOperation value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.ArithmeticGet">
+            <summary>Sets the shim of CaptchaImage.get_Arithmetic()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.ArithmeticSetBoolean">
+            <summary>Sets the shim of CaptchaImage.set_Arithmetic(Boolean value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.ArithmeticSumGet">
+            <summary>Sets the shim of CaptchaImage.get_ArithmeticSum()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.ArithmeticSumSetInt32">
+            <summary>Sets the shim of CaptchaImage.set_ArithmeticSum(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.BackColorGet">
+            <summary>Sets the shim of CaptchaImage.get_BackColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.BackColorSetColor">
+            <summary>Sets the shim of CaptchaImage.set_BackColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.BackgroundNoiseGet">
+            <summary>Sets the shim of CaptchaImage.get_BackgroundNoise()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.BackgroundNoiseSetCaptchaImagebackgroundNoiseLevel">
+            <summary>Sets the shim of CaptchaImage.set_BackgroundNoise(backgroundNoiseLevel value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.Constructor">
+            <summary>Sets the shim of CaptchaImage.CaptchaImage()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.FontColorGet">
+            <summary>Sets the shim of CaptchaImage.get_FontColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.FontColorSetColor">
+            <summary>Sets the shim of CaptchaImage.set_FontColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.FontGet">
+            <summary>Sets the shim of CaptchaImage.get_Font()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.FontSetString">
+            <summary>Sets the shim of CaptchaImage.set_Font(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.FontWarpGet">
+            <summary>Sets the shim of CaptchaImage.get_FontWarp()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.FontWarpSetCaptchaImagefontWarpFactor">
+            <summary>Sets the shim of CaptchaImage.set_FontWarp(fontWarpFactor value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.FontWhitelistGet">
+            <summary>Sets the shim of CaptchaImage.get_FontWhitelist()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.FontWhitelistSetString">
+            <summary>Sets the shim of CaptchaImage.set_FontWhitelist(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.GenerateImagePrivate">
+            <summary>Sets the shim of CaptchaImage.GenerateImagePrivate()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.GenerateRandomText">
+            <summary>Sets the shim of CaptchaImage.GenerateRandomText()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.GetFont">
+            <summary>Sets the shim of CaptchaImage.GetFont()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.HeightGet">
+            <summary>Sets the shim of CaptchaImage.get_Height()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.HeightSetInt32">
+            <summary>Sets the shim of CaptchaImage.set_Height(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.LineColorGet">
+            <summary>Sets the shim of CaptchaImage.get_LineColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.LineColorSetColor">
+            <summary>Sets the shim of CaptchaImage.set_LineColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.LineNoiseGet">
+            <summary>Sets the shim of CaptchaImage.get_LineNoise()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.LineNoiseSetCaptchaImagelineNoiseLevel">
+            <summary>Sets the shim of CaptchaImage.set_LineNoise(lineNoiseLevel value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.NoiseColorGet">
+            <summary>Sets the shim of CaptchaImage.get_NoiseColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.NoiseColorSetColor">
+            <summary>Sets the shim of CaptchaImage.set_NoiseColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.RandomFontFamily">
+            <summary>Sets the shim of CaptchaImage.RandomFontFamily()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.RandomPointInt32Int32Int32Int32">
+            <summary>Sets the shim of CaptchaImage.RandomPoint(Int32 xmin, Int32 xmax, Int32 ymin, Int32 ymax)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.RandomPointRectangle">
+            <summary>Sets the shim of CaptchaImage.RandomPoint(Rectangle rect)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.RenderImage">
+            <summary>Sets the shim of CaptchaImage.RenderImage()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.RenderedAtGet">
+            <summary>Sets the shim of CaptchaImage.get_RenderedAt()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.RenderedAtSetDateTime">
+            <summary>Sets the shim of CaptchaImage.set_RenderedAt(DateTime value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.TextCharsGet">
+            <summary>Sets the shim of CaptchaImage.get_TextChars()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.TextCharsSetString">
+            <summary>Sets the shim of CaptchaImage.set_TextChars(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.TextGet">
+            <summary>Sets the shim of CaptchaImage.get_Text()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.TextLengthGet">
+            <summary>Sets the shim of CaptchaImage.get_TextLength()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.TextLengthSetInt32">
+            <summary>Sets the shim of CaptchaImage.set_TextLength(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.TextPathStringFontRectangle">
+            <summary>Sets the shim of CaptchaImage.TextPath(String s, Font f, Rectangle r)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.TextSetString">
+            <summary>Sets the shim of CaptchaImage.set_Text(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.UniqueIdGet">
+            <summary>Sets the shim of CaptchaImage.get_UniqueId()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.UniqueIdSetString">
+            <summary>Sets the shim of CaptchaImage.set_UniqueId(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.WarpTextGraphicsPathRectangle">
+            <summary>Sets the shim of CaptchaImage.WarpText(GraphicsPath textPath, Rectangle rect)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.WidthGet">
+            <summary>Sets the shim of CaptchaImage.get_Width()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.WidthSetInt32">
+            <summary>Sets the shim of CaptchaImage.set_Width(Int32 value)</summary>
+        </member>
+        <member name="T:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.AddLineGraphicsRectangle">
+            <summary>Sets the shim of CaptchaImage.AddLine(Graphics graphics1, Rectangle rect)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.AddNoiseGraphicsRectangle">
+            <summary>Sets the shim of CaptchaImage.AddNoise(Graphics graphics1, Rectangle rect)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.ArithmeticFunctionGet">
+            <summary>Sets the shim of CaptchaImage.get_ArithmeticFunction()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.ArithmeticFunctionSetCaptchaImagearithmeticOperation">
+            <summary>Sets the shim of CaptchaImage.set_ArithmeticFunction(arithmeticOperation value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.ArithmeticGet">
+            <summary>Sets the shim of CaptchaImage.get_Arithmetic()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.ArithmeticSetBoolean">
+            <summary>Sets the shim of CaptchaImage.set_Arithmetic(Boolean value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.ArithmeticSumGet">
+            <summary>Sets the shim of CaptchaImage.get_ArithmeticSum()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.ArithmeticSumSetInt32">
+            <summary>Sets the shim of CaptchaImage.set_ArithmeticSum(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.BackColorGet">
+            <summary>Sets the shim of CaptchaImage.get_BackColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.BackColorSetColor">
+            <summary>Sets the shim of CaptchaImage.set_BackColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.BackgroundNoiseGet">
+            <summary>Sets the shim of CaptchaImage.get_BackgroundNoise()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.BackgroundNoiseSetCaptchaImagebackgroundNoiseLevel">
+            <summary>Sets the shim of CaptchaImage.set_BackgroundNoise(backgroundNoiseLevel value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.FontColorGet">
+            <summary>Sets the shim of CaptchaImage.get_FontColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.FontColorSetColor">
+            <summary>Sets the shim of CaptchaImage.set_FontColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.FontGet">
+            <summary>Sets the shim of CaptchaImage.get_Font()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.FontSetString">
+            <summary>Sets the shim of CaptchaImage.set_Font(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.FontWarpGet">
+            <summary>Sets the shim of CaptchaImage.get_FontWarp()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.FontWarpSetCaptchaImagefontWarpFactor">
+            <summary>Sets the shim of CaptchaImage.set_FontWarp(fontWarpFactor value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.FontWhitelistGet">
+            <summary>Sets the shim of CaptchaImage.get_FontWhitelist()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.FontWhitelistSetString">
+            <summary>Sets the shim of CaptchaImage.set_FontWhitelist(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.GenerateImagePrivate">
+            <summary>Sets the shim of CaptchaImage.GenerateImagePrivate()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.GenerateRandomText">
+            <summary>Sets the shim of CaptchaImage.GenerateRandomText()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.GetFont">
+            <summary>Sets the shim of CaptchaImage.GetFont()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.HeightGet">
+            <summary>Sets the shim of CaptchaImage.get_Height()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.HeightSetInt32">
+            <summary>Sets the shim of CaptchaImage.set_Height(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.LineColorGet">
+            <summary>Sets the shim of CaptchaImage.get_LineColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.LineColorSetColor">
+            <summary>Sets the shim of CaptchaImage.set_LineColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.LineNoiseGet">
+            <summary>Sets the shim of CaptchaImage.get_LineNoise()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.LineNoiseSetCaptchaImagelineNoiseLevel">
+            <summary>Sets the shim of CaptchaImage.set_LineNoise(lineNoiseLevel value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.NoiseColorGet">
+            <summary>Sets the shim of CaptchaImage.get_NoiseColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.NoiseColorSetColor">
+            <summary>Sets the shim of CaptchaImage.set_NoiseColor(Color value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.RandomFontFamily">
+            <summary>Sets the shim of CaptchaImage.RandomFontFamily()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.RandomPointInt32Int32Int32Int32">
+            <summary>Sets the shim of CaptchaImage.RandomPoint(Int32 xmin, Int32 xmax, Int32 ymin, Int32 ymax)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.RandomPointRectangle">
+            <summary>Sets the shim of CaptchaImage.RandomPoint(Rectangle rect)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.RenderImage">
+            <summary>Sets the shim of CaptchaImage.RenderImage()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.RenderedAtGet">
+            <summary>Sets the shim of CaptchaImage.get_RenderedAt()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.RenderedAtSetDateTime">
+            <summary>Sets the shim of CaptchaImage.set_RenderedAt(DateTime value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.TextCharsGet">
+            <summary>Sets the shim of CaptchaImage.get_TextChars()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.TextCharsSetString">
+            <summary>Sets the shim of CaptchaImage.set_TextChars(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.TextGet">
+            <summary>Sets the shim of CaptchaImage.get_Text()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.TextLengthGet">
+            <summary>Sets the shim of CaptchaImage.get_TextLength()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.TextLengthSetInt32">
+            <summary>Sets the shim of CaptchaImage.set_TextLength(Int32 value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.TextPathStringFontRectangle">
+            <summary>Sets the shim of CaptchaImage.TextPath(String s, Font f, Rectangle r)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.TextSetString">
+            <summary>Sets the shim of CaptchaImage.set_Text(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.UniqueIdGet">
+            <summary>Sets the shim of CaptchaImage.get_UniqueId()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.UniqueIdSetString">
+            <summary>Sets the shim of CaptchaImage.set_UniqueId(String value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.WarpTextGraphicsPathRectangle">
+            <summary>Sets the shim of CaptchaImage.WarpText(GraphicsPath textPath, Rectangle rect)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.WidthGet">
+            <summary>Sets the shim of CaptchaImage.get_Width()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimCaptchaImage.AllInstances.WidthSetInt32">
+            <summary>Sets the shim of CaptchaImage.set_Width(Int32 value)</summary>
+        </member>
+        <member name="T:MSCaptcha.Fakes.ShimcaptchaImageHandler">
+            <summary>Shim type of MSCaptcha.captchaImageHandler</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimcaptchaImageHandler.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimcaptchaImageHandler.#ctor(MSCaptcha.captchaImageHandler)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimcaptchaImageHandler.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimcaptchaImageHandler.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimcaptchaImageHandler.Bind(System.Web.IHttpHandler)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.ShimcaptchaImageHandler.Bind(System.Web.SessionState.IRequiresSessionState)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimcaptchaImageHandler.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimcaptchaImageHandler.Constructor">
+            <summary>Sets the shim of captchaImageHandler.captchaImageHandler()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimcaptchaImageHandler.IsReusableSystemWebIHttpHandlerget">
+            <summary>Sets the shim of captchaImageHandler.System.Web.IHttpHandler.get_IsReusable()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimcaptchaImageHandler.SystemWebIHttpHandlerProcessRequestHttpContext">
+            <summary>Sets the shim of captchaImageHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)</summary>
+        </member>
+        <member name="T:MSCaptcha.Fakes.ShimcaptchaImageHandler.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimcaptchaImageHandler.AllInstances.IsReusableSystemWebIHttpHandlerget">
+            <summary>Sets the shim of captchaImageHandler.System.Web.IHttpHandler.get_IsReusable()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.ShimcaptchaImageHandler.AllInstances.SystemWebIHttpHandlerProcessRequestHttpContext">
+            <summary>Sets the shim of captchaImageHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)</summary>
+        </member>
+        <member name="T:MSCaptcha.Fakes.StubCaptchaControl">
+            <summary>Stub type of MSCaptcha.CaptchaControl</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.AccessKeyGet">
+            <summary>Sets the stub of WebControl.get_AccessKey()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.AccessKeySetString">
+            <summary>Sets the stub of WebControl.set_AccessKey(String value)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)">
+            <summary>Sets the stub of WebControl.AddAttributesToRender(HtmlTextWriter writer)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.AddAttributesToRenderHtmlTextWriter">
+            <summary>Sets the stub of WebControl.AddAttributesToRender(HtmlTextWriter writer)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AddParsedSubObject(System.Object)">
+            <summary>Sets the stub of Control.AddParsedSubObject(Object obj)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.AddParsedSubObjectObject">
+            <summary>Sets the stub of Control.AddParsedSubObject(Object obj)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AddedControl(System.Web.UI.Control,System.Int32)">
+            <summary>Sets the stub of Control.AddedControl(Control control, Int32 index)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.AddedControlControlInt32">
+            <summary>Sets the stub of Control.AddedControl(Control control, Int32 index)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.ApplyStyleSheetSkin(System.Web.UI.Page)">
+            <summary>Sets the stub of Control.ApplyStyleSheetSkin(Page page)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ApplyStyleSheetSkinPage">
+            <summary>Sets the stub of Control.ApplyStyleSheetSkin(Page page)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToAccessKey">
+            <summary>Attaches delegates to emulate StubCaptchaControl.AccessKey as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToBorderColor">
+            <summary>Attaches delegates to emulate StubCaptchaControl.BorderColor as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToBorderStyle">
+            <summary>Attaches delegates to emulate StubCaptchaControl.BorderStyle as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToBorderWidth">
+            <summary>Attaches delegates to emulate StubCaptchaControl.BorderWidth as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToClientIDMode">
+            <summary>Attaches delegates to emulate StubCaptchaControl.ClientIDMode as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToCssClass">
+            <summary>Attaches delegates to emulate StubCaptchaControl.CssClass as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToEnableTheming">
+            <summary>Attaches delegates to emulate StubCaptchaControl.EnableTheming as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToEnableViewState">
+            <summary>Attaches delegates to emulate StubCaptchaControl.EnableViewState as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToEnabled">
+            <summary>Attaches delegates to emulate StubCaptchaControl.Enabled as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToForeColor">
+            <summary>Attaches delegates to emulate StubCaptchaControl.ForeColor as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToHeight">
+            <summary>Attaches delegates to emulate StubCaptchaControl.Height as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToID">
+            <summary>Attaches delegates to emulate StubCaptchaControl.ID as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToPage">
+            <summary>Attaches delegates to emulate StubCaptchaControl.Page as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToRenderingCompatibility">
+            <summary>Attaches delegates to emulate StubCaptchaControl.RenderingCompatibility as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToSkinID">
+            <summary>Attaches delegates to emulate StubCaptchaControl.SkinID as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToTabIndex">
+            <summary>Attaches delegates to emulate StubCaptchaControl.TabIndex as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToToolTip">
+            <summary>Attaches delegates to emulate StubCaptchaControl.ToolTip as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToValidateRequestMode">
+            <summary>Attaches delegates to emulate StubCaptchaControl.ValidateRequestMode as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToViewStateMode">
+            <summary>Attaches delegates to emulate StubCaptchaControl.ViewStateMode as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToVisible">
+            <summary>Attaches delegates to emulate StubCaptchaControl.Visible as a property with a backing field.</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.AttachBackingFieldToWidth">
+            <summary>Attaches delegates to emulate StubCaptchaControl.Width as a property with a backing field.</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.BorderColorGet">
+            <summary>Sets the stub of WebControl.get_BorderColor()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.BorderColorSetColor">
+            <summary>Sets the stub of WebControl.set_BorderColor(Color value)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.BorderStyleGet">
+            <summary>Sets the stub of WebControl.get_BorderStyle()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.BorderStyleSetBorderStyle">
+            <summary>Sets the stub of WebControl.set_BorderStyle(BorderStyle value)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.BorderWidthGet">
+            <summary>Sets the stub of WebControl.get_BorderWidth()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.BorderWidthSetUnit">
+            <summary>Sets the stub of WebControl.set_BorderWidth(Unit value)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ClientIDGet">
+            <summary>Sets the stub of Control.get_ClientID()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ClientIDModeGet">
+            <summary>Sets the stub of Control.get_ClientIDMode()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ClientIDModeSetClientIDMode">
+            <summary>Sets the stub of Control.set_ClientIDMode(ClientIDMode value)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ContextGet">
+            <summary>Sets the stub of Control.get_Context()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ControlsGet">
+            <summary>Sets the stub of Control.get_Controls()</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.CreateChildControls">
+            <summary>Sets the stub of Control.CreateChildControls()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.CreateChildControls01">
+            <summary>Sets the stub of Control.CreateChildControls()</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.CreateControlCollection">
+            <summary>Sets the stub of Control.CreateControlCollection()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.CreateControlCollection01">
+            <summary>Sets the stub of Control.CreateControlCollection()</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.CreateControlStyle">
+            <summary>Sets the stub of WebControl.CreateControlStyle()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.CreateControlStyle01">
+            <summary>Sets the stub of WebControl.CreateControlStyle()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.CssClassGet">
+            <summary>Sets the stub of WebControl.get_CssClass()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.CssClassSetString">
+            <summary>Sets the stub of WebControl.set_CssClass(String value)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.DataBind">
+            <summary>Sets the stub of Control.DataBind()</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.DataBind(System.Boolean)">
+            <summary>Sets the stub of Control.DataBind(Boolean raiseOnDataBinding)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.DataBind01">
+            <summary>Sets the stub of Control.DataBind()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.DataBindBoolean">
+            <summary>Sets the stub of Control.DataBind(Boolean raiseOnDataBinding)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.DataBindChildren">
+            <summary>Sets the stub of Control.DataBindChildren()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.DataBindChildren01">
+            <summary>Sets the stub of Control.DataBindChildren()</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.Dispose">
+            <summary>Sets the stub of Control.Dispose()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.Dispose01">
+            <summary>Sets the stub of Control.Dispose()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.EnableThemingGet">
+            <summary>Sets the stub of WebControl.get_EnableTheming()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.EnableThemingSetBoolean">
+            <summary>Sets the stub of WebControl.set_EnableTheming(Boolean value)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.EnableViewStateGet">
+            <summary>Sets the stub of Control.get_EnableViewState()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.EnableViewStateSetBoolean">
+            <summary>Sets the stub of Control.set_EnableViewState(Boolean value)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.EnabledGet">
+            <summary>Sets the stub of CaptchaControl.get_Enabled()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.EnabledSetBoolean">
+            <summary>Sets the stub of CaptchaControl.set_Enabled(Boolean value)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.EnsureChildControls">
+            <summary>Sets the stub of Control.EnsureChildControls()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.EnsureChildControls01">
+            <summary>Sets the stub of Control.EnsureChildControls()</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.FindControl(System.String)">
+            <summary>Sets the stub of Control.FindControl(String id)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.FindControl(System.String,System.Int32)">
+            <summary>Sets the stub of Control.FindControl(String id, Int32 pathOffset)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.FindControlString">
+            <summary>Sets the stub of Control.FindControl(String id)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.FindControlStringInt32">
+            <summary>Sets the stub of Control.FindControl(String id, Int32 pathOffset)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.Focus">
+            <summary>Sets the stub of Control.Focus()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.Focus01">
+            <summary>Sets the stub of Control.Focus()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.FontGet">
+            <summary>Sets the stub of WebControl.get_Font()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ForeColorGet">
+            <summary>Sets the stub of WebControl.get_ForeColor()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ForeColorSetColor">
+            <summary>Sets the stub of WebControl.set_ForeColor(Color value)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.GetDesignModeState">
+            <summary>Sets the stub of Control.GetDesignModeState()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.GetDesignModeState01">
+            <summary>Sets the stub of Control.GetDesignModeState()</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.HasControls">
+            <summary>Sets the stub of Control.HasControls()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.HasControls01">
+            <summary>Sets the stub of Control.HasControls()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.HeightGet">
+            <summary>Sets the stub of WebControl.get_Height()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.HeightSetUnit">
+            <summary>Sets the stub of WebControl.set_Height(Unit value)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.IDGet">
+            <summary>Sets the stub of Control.get_ID()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.IDSetString">
+            <summary>Sets the stub of Control.set_ID(String value)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.InitializeStub">
+            <summary>Initializes a new instance of type StubCaptchaControl</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.LoadControlState(System.Object)">
+            <summary>Sets the stub of CaptchaControl.LoadControlState(Object state)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.LoadControlStateObject">
+            <summary>Sets the stub of CaptchaControl.LoadControlState(Object state)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.LoadViewState(System.Object)">
+            <summary>Sets the stub of WebControl.LoadViewState(Object savedState)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.LoadViewStateObject">
+            <summary>Sets the stub of WebControl.LoadViewState(Object savedState)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.NamingContainerGet">
+            <summary>Sets the stub of Control.get_NamingContainer()</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.OnBubbleEvent(System.Object,System.EventArgs)">
+            <summary>Sets the stub of Control.OnBubbleEvent(Object source, EventArgs args)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.OnBubbleEventObjectEventArgs">
+            <summary>Sets the stub of Control.OnBubbleEvent(Object source, EventArgs args)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.OnDataBinding(System.EventArgs)">
+            <summary>Sets the stub of Control.OnDataBinding(EventArgs e)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.OnDataBindingEventArgs">
+            <summary>Sets the stub of Control.OnDataBinding(EventArgs e)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.OnInit(System.EventArgs)">
+            <summary>Sets the stub of CaptchaControl.OnInit(EventArgs e)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.OnInitEventArgs">
+            <summary>Sets the stub of CaptchaControl.OnInit(EventArgs e)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.OnLoad(System.EventArgs)">
+            <summary>Sets the stub of Control.OnLoad(EventArgs e)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.OnLoadEventArgs">
+            <summary>Sets the stub of Control.OnLoad(EventArgs e)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.OnPreRender(System.EventArgs)">
+            <summary>Sets the stub of CaptchaControl.OnPreRender(EventArgs e)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.OnPreRenderEventArgs">
+            <summary>Sets the stub of CaptchaControl.OnPreRender(EventArgs e)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.OnUnload(System.EventArgs)">
+            <summary>Sets the stub of CaptchaControl.OnUnload(EventArgs e)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.OnUnloadEventArgs">
+            <summary>Sets the stub of CaptchaControl.OnUnload(EventArgs e)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.PageGet">
+            <summary>Sets the stub of Control.get_Page()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.PageSetPage">
+            <summary>Sets the stub of Control.set_Page(Page value)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ParentGet">
+            <summary>Sets the stub of Control.get_Parent()</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.RemovedControl(System.Web.UI.Control)">
+            <summary>Sets the stub of Control.RemovedControl(Control control)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.RemovedControlControl">
+            <summary>Sets the stub of Control.RemovedControl(Control control)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>Sets the stub of CaptchaControl.Render(HtmlTextWriter output)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)">
+            <summary>Sets the stub of WebControl.RenderBeginTag(HtmlTextWriter writer)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.RenderBeginTagHtmlTextWriter">
+            <summary>Sets the stub of WebControl.RenderBeginTag(HtmlTextWriter writer)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.RenderChildren(System.Web.UI.HtmlTextWriter)">
+            <summary>Sets the stub of Control.RenderChildren(HtmlTextWriter writer)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.RenderChildrenHtmlTextWriter">
+            <summary>Sets the stub of Control.RenderChildren(HtmlTextWriter writer)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.RenderContents(System.Web.UI.HtmlTextWriter)">
+            <summary>Sets the stub of WebControl.RenderContents(HtmlTextWriter writer)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.RenderContentsHtmlTextWriter">
+            <summary>Sets the stub of WebControl.RenderContents(HtmlTextWriter writer)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.RenderControl(System.Web.UI.HtmlTextWriter)">
+            <summary>Sets the stub of Control.RenderControl(HtmlTextWriter writer)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.RenderControlHtmlTextWriter">
+            <summary>Sets the stub of Control.RenderControl(HtmlTextWriter writer)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.RenderEndTag(System.Web.UI.HtmlTextWriter)">
+            <summary>Sets the stub of WebControl.RenderEndTag(HtmlTextWriter writer)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.RenderEndTagHtmlTextWriter">
+            <summary>Sets the stub of WebControl.RenderEndTag(HtmlTextWriter writer)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.RenderHtmlTextWriter">
+            <summary>Sets the stub of CaptchaControl.Render(HtmlTextWriter output)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.RenderingCompatibilityGet">
+            <summary>Sets the stub of Control.get_RenderingCompatibility()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.RenderingCompatibilitySetVersion">
+            <summary>Sets the stub of Control.set_RenderingCompatibility(Version value)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.ResolveAdapter">
+            <summary>Sets the stub of Control.ResolveAdapter()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ResolveAdapter01">
+            <summary>Sets the stub of Control.ResolveAdapter()</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.SaveControlState">
+            <summary>Sets the stub of CaptchaControl.SaveControlState()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.SaveControlState01">
+            <summary>Sets the stub of CaptchaControl.SaveControlState()</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.SaveViewState">
+            <summary>Sets the stub of WebControl.SaveViewState()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.SaveViewState01">
+            <summary>Sets the stub of WebControl.SaveViewState()</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.SetDesignModeState(System.Collections.IDictionary)">
+            <summary>Sets the stub of Control.SetDesignModeState(IDictionary data)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.SetDesignModeStateIDictionary">
+            <summary>Sets the stub of Control.SetDesignModeState(IDictionary data)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.SkinIDGet">
+            <summary>Sets the stub of WebControl.get_SkinID()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.SkinIDSetString">
+            <summary>Sets the stub of WebControl.set_SkinID(String value)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.SupportsDisabledAttributeGet">
+            <summary>Sets the stub of WebControl.get_SupportsDisabledAttribute()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.TabIndexGet">
+            <summary>Sets the stub of WebControl.get_TabIndex()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.TabIndexSetInt16">
+            <summary>Sets the stub of WebControl.set_TabIndex(Int16 value)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.TagKeyGet">
+            <summary>Sets the stub of WebControl.get_TagKey()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.TagNameGet">
+            <summary>Sets the stub of WebControl.get_TagName()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.TemplateSourceDirectoryGet">
+            <summary>Sets the stub of Control.get_TemplateSourceDirectory()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ToolTipGet">
+            <summary>Sets the stub of WebControl.get_ToolTip()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ToolTipSetString">
+            <summary>Sets the stub of WebControl.set_ToolTip(String value)</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaControl.TrackViewState">
+            <summary>Sets the stub of WebControl.TrackViewState()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.TrackViewState01">
+            <summary>Sets the stub of WebControl.TrackViewState()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.UniqueIDGet">
+            <summary>Sets the stub of Control.get_UniqueID()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ValidateRequestModeGet">
+            <summary>Sets the stub of Control.get_ValidateRequestMode()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ValidateRequestModeSetValidateRequestMode">
+            <summary>Sets the stub of Control.set_ValidateRequestMode(ValidateRequestMode value)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ViewStateGet">
+            <summary>Sets the stub of Control.get_ViewState()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ViewStateIgnoresCaseGet">
+            <summary>Sets the stub of Control.get_ViewStateIgnoresCase()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ViewStateModeGet">
+            <summary>Sets the stub of Control.get_ViewStateMode()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.ViewStateModeSetViewStateMode">
+            <summary>Sets the stub of Control.set_ViewStateMode(ViewStateMode value)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.VisibleGet">
+            <summary>Sets the stub of Control.get_Visible()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.VisibleSetBoolean">
+            <summary>Sets the stub of Control.set_Visible(Boolean value)</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.WidthGet">
+            <summary>Sets the stub of WebControl.get_Width()</summary>
+        </member>
+        <member name="F:MSCaptcha.Fakes.StubCaptchaControl.WidthSetUnit">
+            <summary>Sets the stub of WebControl.set_Width(Unit value)</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.AccessKey">
+            <summary>Sets the stub of WebControl.get_AccessKey()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.BorderColor">
+            <summary>Sets the stub of WebControl.get_BorderColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.BorderStyle">
+            <summary>Sets the stub of WebControl.get_BorderStyle()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.BorderWidth">
+            <summary>Sets the stub of WebControl.get_BorderWidth()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.ClientID">
+            <summary>Sets the stub of Control.get_ClientID()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.ClientIDMode">
+            <summary>Sets the stub of Control.get_ClientIDMode()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.Context">
+            <summary>Sets the stub of Control.get_Context()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.Controls">
+            <summary>Sets the stub of Control.get_Controls()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.CssClass">
+            <summary>Sets the stub of WebControl.get_CssClass()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.EnableTheming">
+            <summary>Sets the stub of WebControl.get_EnableTheming()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.EnableViewState">
+            <summary>Sets the stub of Control.get_EnableViewState()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.Enabled">
+            <summary>Sets the stub of CaptchaControl.get_Enabled()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.Font">
+            <summary>Sets the stub of WebControl.get_Font()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.ForeColor">
+            <summary>Sets the stub of WebControl.get_ForeColor()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.Height">
+            <summary>Sets the stub of WebControl.get_Height()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.ID">
+            <summary>Sets the stub of Control.get_ID()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.NamingContainer">
+            <summary>Sets the stub of Control.get_NamingContainer()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.Page">
+            <summary>Sets the stub of Control.get_Page()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.Parent">
+            <summary>Sets the stub of Control.get_Parent()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.RenderingCompatibility">
+            <summary>Sets the stub of Control.get_RenderingCompatibility()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.SkinID">
+            <summary>Sets the stub of WebControl.get_SkinID()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.SupportsDisabledAttribute">
+            <summary>Sets the stub of WebControl.get_SupportsDisabledAttribute()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.TabIndex">
+            <summary>Sets the stub of WebControl.get_TabIndex()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.TagKey">
+            <summary>Sets the stub of WebControl.get_TagKey()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.TagName">
+            <summary>Sets the stub of WebControl.get_TagName()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.TemplateSourceDirectory">
+            <summary>Sets the stub of Control.get_TemplateSourceDirectory()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.ToolTip">
+            <summary>Sets the stub of WebControl.get_ToolTip()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.UniqueID">
+            <summary>Sets the stub of Control.get_UniqueID()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.ValidateRequestMode">
+            <summary>Sets the stub of Control.get_ValidateRequestMode()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.ViewState">
+            <summary>Sets the stub of Control.get_ViewState()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.ViewStateIgnoresCase">
+            <summary>Sets the stub of Control.get_ViewStateIgnoresCase()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.ViewStateMode">
+            <summary>Sets the stub of Control.get_ViewStateMode()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.Visible">
+            <summary>Sets the stub of Control.get_Visible()</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaControl.Width">
+            <summary>Sets the stub of WebControl.get_Width()</summary>
+        </member>
+        <member name="T:MSCaptcha.Fakes.StubCaptchaImage">
+            <summary>Stub type of MSCaptcha.CaptchaImage</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaImage.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubCaptchaImage.InitializeStub">
+            <summary>Initializes a new instance of type StubCaptchaImage</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaImage.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaImage.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubCaptchaImage.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MSCaptcha.Fakes.StubcaptchaImageHandler">
+            <summary>Stub type of MSCaptcha.captchaImageHandler</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubcaptchaImageHandler.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MSCaptcha.Fakes.StubcaptchaImageHandler.InitializeStub">
+            <summary>Initializes a new instance of type StubcaptchaImageHandler</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubcaptchaImageHandler.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubcaptchaImageHandler.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MSCaptcha.Fakes.StubcaptchaImageHandler.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

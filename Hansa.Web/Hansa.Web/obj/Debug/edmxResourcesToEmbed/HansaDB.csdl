@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HansadbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="HansadbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Employee" EntityType="Self.Employee" />
+    <EntitySet Name="Group" EntityType="HansadbModel.Group" />
+    <EntitySet Name="GroupRole" EntityType="HansadbModel.GroupRole" />
+    <EntitySet Name="Menu" EntityType="HansadbModel.Menu" />
+    <EntitySet Name="Role" EntityType="HansadbModel.Role" />
+    <EntitySet Name="RoleDetail" EntityType="HansadbModel.RoleDetail" />
+    <EntitySet Name="User" EntityType="HansadbModel.User" />
+    <EntitySet Name="GroupUsers" EntityType="HansadbModel.GroupUsers" />
+    <AssociationSet Name="FK_RoleDetail_Role" Association="HansadbModel.FK_RoleDetail_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="RoleDetail" EntitySet="RoleDetail" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="GroupCode" />
+    </Key>
+    <Property Name="GroupCode" Type="Int32" Nullable="false" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GroupRole">
+    <Key>
+      <PropertyRef Name="GroupCode" />
+      <PropertyRef Name="RoleCode" />
+    </Key>
+    <Property Name="GroupCode" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="RoleCode" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ParentID" Type="Int32" />
+    <Property Name="Location" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ModuleID" Type="Int32" Nullable="false" />
+    <Property Name="MenuOrder" Type="Int32" Nullable="false" />
+    <Property Name="Caption" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="ToolTip" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleCode" />
+    </Key>
+    <Property Name="RoleCode" Type="Int32" Nullable="false" />
+    <Property Name="RoleName" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="RoleDescription" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="RoleDetail" Relationship="HansadbModel.FK_RoleDetail_Role" FromRole="Role" ToRole="RoleDetail" />
+  </EntityType>
+  <EntityType Name="RoleDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MenuID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RoleCode" Type="Int32" Nullable="false" />
+    <Property Name="CanSelect" Type="Boolean" Nullable="false" />
+    <Property Name="CanInsert" Type="Boolean" Nullable="false" />
+    <Property Name="CanUpdate" Type="Boolean" Nullable="false" />
+    <Property Name="CanDelete" Type="Boolean" Nullable="false" />
+    <Property Name="CanSend" Type="Boolean" />
+    <Property Name="CanCheck" Type="Boolean" />
+    <Property Name="CanApprove" Type="Boolean" />
+    <Property Name="CanPreview" Type="Boolean" Nullable="false" />
+    <Property Name="AllChk" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Role" Relationship="HansadbModel.FK_RoleDetail_Role" FromRole="RoleDetail" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SecurityQuestion" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Answer" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="StatusID" Type="Int32" Nullable="false" />
+    <Property Name="EntryUserID" Type="Int32" Nullable="false" />
+    <Property Name="EntryDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdateUserID" Type="Int32" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+    <Property Name="IsAdmin" Type="Boolean" />
+    <Property Name="ThanaID" Type="Int16" />
+    <Property Name="DivisionID" Type="Int16" />
+  </EntityType>
+  <EntityType Name="GroupUsers">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="GroupCode" />
+    </Key>
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="GroupCode" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_RoleDetail_Role">
+    <End Type="HansadbModel.Role" Role="Role" Multiplicity="1" />
+    <End Type="HansadbModel.RoleDetail" Role="RoleDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleCode" />
+      </Principal>
+      <Dependent Role="RoleDetail">
+        <PropertyRef Name="RoleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

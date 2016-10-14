@@ -1,0 +1,868 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B1F00FF9-1F04-46D2-B6E2-6D3D084D02D6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hansa.Web</RootNamespace>
+    <AssemblyName>Hansa.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\Converting_WAS _TO_WAP\Was\RND\(UD)VMS\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="MSCaptcha, Version=1.0.2832.11804, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\UG\Downloads\mscaptcha4\MSCaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="MSCaptcha.4.0.4250.31585.Fakes">
+      <HintPath>FakesAssemblies\MSCaptcha.4.0.4250.31585.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Career.aspx" />
+    <Content Include="Content\assets\images\LogoImage\HANSALOGOFINAL.png" />
+    <Content Include="Content\assets\images\LogoImage\Ugnewlogotransparent.png" />
+    <Content Include="Content\assets\images\PageImage\Chairman2.png" />
+    <Content Include="Content\assets\images\PageImage\chairman_3.png" />
+    <Content Include="Content\assets\images\PageImage\garbage_dispsoe.jpg" />
+    <Content Include="CSR.aspx" />
+    <Content Include="Mission.aspx" />
+    <Content Include="Vision.aspx" />
+    <Content Include="Goals.aspx" />
+    <Content Include="Objective.aspx" />
+    <Content Include="apple-touch-icon.png" />
+    <Content Include="Content\assets\ClientLogoPNG\9-22-2015 11-57-21 AM.jpg" />
+    <Content Include="Content\assets\ClientLogoPNG\AmaderSomoy.png" />
+    <Content Include="Content\assets\ClientLogoPNG\BanglaTel.png" />
+    <Content Include="Content\assets\ClientLogoPNG\BorakShiping.png" />
+    <Content Include="Content\assets\ClientLogoPNG\ClientBoraklogo.png" />
+    <Content Include="Content\assets\ClientLogoPNG\group_logo_all.png" />
+    <Content Include="Content\assets\ClientLogoPNG\UCI.bmp" />
+    <Content Include="Content\assets\ClientLogoPNG\UE.jpg" />
+    <Content Include="Content\assets\ClientLogoPNG\UHRLLOGO.jpg" />
+    <Content Include="Content\assets\ClientLogoPNG\Umcpl.png" />
+    <Content Include="Content\assets\ClientLogoPNG\UniqueCeramics.png" />
+    <Content Include="Content\assets\ClientLogoPNG\UniqueEastern.png" />
+    <Content Include="Content\assets\ClientLogoPNG\UniqueHotel.png" />
+    <Content Include="Content\assets\ClientLogoPNG\UniqueProperties.png" />
+    <Content Include="Content\assets\ClientLogoPNG\UniqueShareMngmnt.png" />
+    <Content Include="Content\assets\ClientLogoPNG\UniqueVocationalTraining.png" />
+    <Content Include="Content\assets\ClientLogoPNG\Update.png" />
+    <Content Include="Content\assets\ClientLogoPNG\UPDL-Logo.jpg" />
+    <Content Include="Content\assets\ClientLogoPNG\UVTC.jpg" />
+    <Content Include="Content\assets\ClientLogoPNG\Westin.png" />
+    <Content Include="Content\assets\ImagesForRatings\FilleddImage80.jpg" />
+    <Content Include="Content\assets\ImagesForRatings\staredImage80.jpg" />
+    <Content Include="Content\assets\ImagesForRatings\waitImage80.jpg" />
+    <Content Include="Content\assets\ImagesForRatings\WaitingStarImg.png" />
+    <Content Include="Content\assets\ImagesForRatings\FilledStar.gif" />
+    <Content Include="Content\assets\ImagesForRatings\Star.gif" />
+    <Content Include="Content\assets\ImagesForRatings\FilledStarImg.png" />
+    <Content Include="Content\assets\ImagesForRatings\StarImg.png" />
+    <Content Include="Content\assets\ImagesForRatings\WaitingStar.gif" />
+    <Content Include="Content\assets\images\LogoImage\ClientBoraklogo.png" />
+    <Content Include="Content\assets\images\LogoImage\cream_pixels.png" />
+    <Content Include="Content\assets\images\LogoImage\HansaLogo.jpg" />
+    <Content Include="Content\assets\images\LogoImage\LogoGroup%282%29.png" />
+    <Content Include="Content\assets\images\LogoImage\LogoGroup_Back.png" />
+    <Content Include="Content\assets\images\PageImage\CSR2.jpg" />
+    <Content Include="Content\assets\images\PageImage\babysitter.jpg" />
+    <Content Include="Content\assets\images\PageImage\beauty_care.jpg" />
+    <Content Include="Content\assets\images\PageImage\BoardOfDirectors.png" />
+    <Content Include="Content\assets\images\PageImage\car_mechanic.jpg" />
+    <Content Include="Content\assets\images\PageImage\car_wash.jpg" />
+    <Content Include="Content\assets\images\PageImage\catering_services.jpg" />
+    <Content Include="Content\assets\images\PageImage\Chairman.png" />
+    <Content Include="Content\assets\images\PageImage\ChiefAdvisor.png" />
+    <Content Include="Content\assets\images\PageImage\cleaning.jpg" />
+    <Content Include="Content\assets\images\PageImage\CleaningHousekeeping.jpg" />
+    <Content Include="Content\assets\images\PageImage\CleaningNHouseKeepingDown.png" />
+    <Content Include="Content\assets\images\PageImage\CleaningNHouseKeepingUp.png" />
+    <Content Include="Content\assets\images\PageImage\cleaning_services.jpg" />
+    <Content Include="Content\assets\images\PageImage\constraction_maintenance.jpg" />
+    <Content Include="Content\assets\images\PageImage\ConstructionMaintanance.png" />
+    <Content Include="Content\assets\images\PageImage\contract_mngment.jpg" />
+    <Content Include="Content\assets\images\PageImage\CSR.png" />
+    <Content Include="Content\assets\images\PageImage\disaster-kit.jpg" />
+    <Content Include="Content\assets\images\PageImage\DisasterManagement.png" />
+    <Content Include="Content\assets\images\PageImage\exclusive_cleaning.jpg" />
+    <Content Include="Content\assets\images\PageImage\facade_cleaning.jpg" />
+    <Content Include="Content\assets\images\PageImage\FacadeCleaning.png" />
+    <Content Include="Content\assets\images\PageImage\First-Fund-Management-Swift-Messages.jpg" />
+    <Content Include="Content\assets\images\PageImage\ChiefAdvisorImg.jpg" />
+    <Content Include="Content\assets\images\PageImage\garbage_dispsoe_tr.jpg" />
+    <Content Include="Content\assets\images\PageImage\GarbageDisposalNManagement.png" />
+    <Content Include="Content\assets\images\PageImage\HansaLogo-Icon.png" />
+    <Content Include="Content\assets\images\PageImage\hardservice.jpg" />
+    <Content Include="Content\assets\images\PageImage\HardServices.png" />
+    <Content Include="Content\assets\images\PageImage\houeskeeping-1a.jpg" />
+    <Content Include="Content\assets\images\PageImage\insurance_management.jpg" />
+    <Content Include="Content\assets\images\PageImage\InsuranceManagement.png" />
+    <Content Include="Content\assets\images\PageImage\Landscaping-1.png" />
+    <Content Include="Content\assets\images\PageImage\LandscapingInSoftServicePopUp.png" />
+    <Content Include="Content\assets\images\PageImage\laundry.jpg" />
+    <Content Include="Content\assets\images\PageImage\ManagingDirector.png" />
+    <Content Include="Content\assets\images\PageImage\massage.jpg" />
+    <Content Include="Content\assets\images\PageImage\mepNeme.jpg" />
+    <Content Include="Content\assets\images\PageImage\MEPOREME.png" />
+    <Content Include="Content\assets\images\PageImage\Parvez%282%29[2].jpg" />
+    <Content Include="Content\assets\images\PageImage\PasteControl.png" />
+    <Content Include="Content\assets\images\PageImage\pay_per_use.jpg" />
+    <Content Include="Content\assets\images\PageImage\PayPerUse.png" />
+    <Content Include="Content\assets\images\PageImage\personal_trainer.jpg" />
+    <Content Include="Content\assets\images\PageImage\pest1.png" />
+    <Content Include="Content\assets\images\PageImage\petcare.jpg" />
+    <Content Include="Content\assets\images\PageImage\Preamplifier_at_the_National_Ignition_Facility.jpg" />
+    <Content Include="Content\assets\images\PageImage\property_sale_and_rental.jpg" />
+    <Content Include="Content\assets\images\PageImage\renovation.jpg" />
+    <Content Include="Content\assets\images\PageImage\RenovationNEnteriorSolution.png" />
+    <Content Include="Content\assets\images\PageImage\riskManagement.jpg" />
+    <Content Include="Content\assets\images\PageImage\RiskManagement.png" />
+    <Content Include="Content\assets\images\PageImage\safety_large.jpg" />
+    <Content Include="Content\assets\images\PageImage\Safty.png" />
+    <Content Include="Content\assets\images\PageImage\security_surveilence%281%29.jpg" />
+    <Content Include="Content\assets\images\PageImage\security surveilence.jpg" />
+    <Content Include="Content\assets\images\PageImage\SecurityNServillance.png" />
+    <Content Include="Content\assets\images\PageImage\security_surveilence%281%29.png" />
+    <Content Include="Content\assets\images\PageImage\SoftServices.png" />
+    <Content Include="Content\assets\images\PageImage\soft_service.jpg" />
+    <Content Include="Content\assets\images\PageImage\CSR1.jpg" />
+    <Content Include="Content\assets\images\PageImage\UniqueGroupLogo-Icon.png" />
+    <Content Include="About.aspx" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\Cleaning1.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\cleaning2.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\cleaning3.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\cleaning4.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\cleaning5.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\cleaning6.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FacadeCleaning1.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FMCLN_1.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FMCLN_10.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FMCLN_11.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FMCLN_12.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FMCLN_13.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FMCLN_14.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FMCLN_2.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FMCLN_3.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FMCLN_4.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FMCLN_5.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FMCLN_6.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FMCLN_7.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FMCLN_8.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\FMCLN_9.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\pestControl1.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\pestControl2.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\pestControl3.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\pestControl4.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\pestControl5.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\pestControl6.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\security1.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\security2.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\security3.png" />
+    <Content Include="Content\assets\images\ServicesPopUpImages\security4.png" />
+    <Content Include="Content\assets\images\Sliders\COMPLETED\RCBT\RCBT.jpg" />
+    <Content Include="Content\assets\images\Sliders\COMPLETED\The Westin Dhaka\EXT2.jpg" />
+    <Content Include="Content\assets\images\Sliders\COMPLETED\Unique Oval\DSC_8353.JPG" />
+    <Content Include="Content\assets\images\Sliders\COMPLETED\Unique Oval\DSC_8368.JPG" />
+    <Content Include="Content\assets\images\Sliders\COMPLETED\Unique Oval\Oval 3.jpg" />
+    <Content Include="Content\assets\images\Sliders\COMPLETED\UTC\UTC-2.jpg" />
+    <Content Include="Content\assets\images\Sliders\COMPLETED\UTC\utc.jpg" />
+    <Content Include="Content\assets\images\Sliders\Heights1.jpg" />
+    <Content Include="Content\assets\images\Sliders\Heights.png" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Acropolis\rendering%281%29.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Acropolis\rendering%282%29.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Banani DCC Unique Complex\150223_DCC_A.RGB_color111.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Banani DCC Unique Complex\150304_DCC_B.RGB_color.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Banani DCC Unique Complex\150304_DCC_C0.RGB_color.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Banani DCC Unique Complex\150304_DCC_D.RGB_color.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Banani DCC Unique Complex\150304_DCC_E.RGB_color.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Borak Biz Center\FINAL70DilkushaPic.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Borak Chowdhury Sprinkle\Sprinkle-01_View01-1.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Borak Mahnur\BORAK MEHNUR opt 1 night.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Borak Mahnur\BORAK MEHNUR opt 1.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Borak Mahnur\BORAK MEHNUR opt2.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Borak Park Valley\Park Valley Image.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Borak Zahir Tower\BZ edited.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Borak Zahir Tower\ZOHIR TOWER_02b.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\RCBT.jpg" />
+    <Content Include="Content\assets\images\Sliders\ONGOING\Unique Heights\Heights 1.jpg" />
+    <Content Include="Content\assets\images\Sliders\UPCOMING\at Rampura\View-1.jpg" />
+    <Content Include="Content\assets\images\Sliders\UPCOMING\Borak Green Living\CAM 1%282%29copy.png" />
+    <Content Include="Content\assets\images\Sliders\UPCOMING\Minerva\Map_324.jpg" />
+    <Content Include="Content\assets\images\Sliders\UPCOMING\Westin South Plaza\1.jpg" />
+    <Content Include="Content\assets\images\Sliders\UPCOMING\Westin South Plaza\4.jpg" />
+    <Content Include="Content\assets\images\Sliders\UPCOMING\Westin South Plaza\Untitled.png" />
+    <Content Include="Content\assets\plugins\jquery.fancybox1.css" />
+    <Content Include="ForBootStrapPopUp\1.11.3jquery.min.js" />
+    <Content Include="ForBootStrapPopUp\3.3.5bootstrap.min.css" />
+    <Content Include="ForBootStrapPopUp\3.3.5bootstrap.min.js" />
+    <Content Include="ForLoginScreen\Registration.css" />
+    <Content Include="ForLoginScreen\LogIn.css" />
+    <Content Include="ForLoginScreen\LogIn.js" />
+    <Content Include="AskHansa.aspx" />
+    <Content Include="Management.aspx" />
+    <Content Include="Ongoing.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="LoginUI.aspx" />
+    <Content Include="RiskManagementWithSecondMaster.aspx" />
+    <Content Include="PayPerUseWithSecondMaster.aspx" />
+    <Content Include="RoleSetup.aspx" />
+    <Content Include="ShowRDLC.aspx" />
+    <Content Include="SoftServices.aspx" />
+    <Content Include="ManagementWpopup.aspx" />
+    <Content Include="Background.aspx" />
+    <Content Include="Content\assets\css\bootstrap.min.css" />
+    <Content Include="Content\assets\css\font-awesome.min.css" />
+    <Content Include="Content\assets\css\style.css" />
+    <Content Include="Content\assets\fonts\stylesheet.css" />
+    <Content Include="Content\assets\images\4jobs.png" />
+    <Content Include="Content\assets\images\blog1.jpg" />
+    <Content Include="Content\assets\images\captcha.jpg" />
+    <Content Include="Content\assets\images\caret-right.png" />
+    <Content Include="Content\assets\images\check.jpg" />
+    <Content Include="Content\assets\images\check2.png" />
+    <Content Include="Content\assets\images\client1.png" />
+    <Content Include="Content\assets\images\client2.png" />
+    <Content Include="Content\assets\images\client3.png" />
+    <Content Include="Content\assets\images\client4.png" />
+    <Content Include="Content\assets\images\client5.png" />
+    <Content Include="Content\assets\images\client6.png" />
+    <Content Include="Content\assets\images\comment-thumb.jpg" />
+    <Content Include="Content\assets\images\darker.png" />
+    <Content Include="Content\assets\images\demo.png" />
+    <Content Include="Content\assets\images\footer-logo.png" />
+    <Content Include="Content\assets\images\HansaLogoOriginal.jpg" />
+    <Content Include="Content\assets\images\img1.jpg" />
+    <Content Include="Content\assets\images\img1.png" />
+    <Content Include="Content\assets\images\impactmedia.png" />
+    <Content Include="Content\assets\images\jobthumb.png" />
+    <Content Include="Content\assets\images\logo.png" />
+    <Content Include="Content\assets\images\LogoImage\HansaLogo.png" />
+    <Content Include="Content\assets\images\LogoImage\UniqueGroupLogo.png" />
+    <Content Include="Content\assets\images\marker.png" />
+    <Content Include="Content\assets\images\medition.png" />
+    <Content Include="Content\assets\images\member.jpg" />
+    <Content Include="Content\assets\images\minus.png" />
+    <Content Include="Content\assets\images\PageImage\BackgroundWWare.png" />
+    <Content Include="Content\assets\images\PageImage\cleaning.png" />
+    <Content Include="Content\assets\images\PageImage\engineering.png" />
+    <Content Include="Content\assets\images\PageImage\HansaLogo.png" />
+    <Content Include="Content\assets\images\PageImage\homecare.png" />
+    <Content Include="Content\assets\images\PageImage\landscaping.png" />
+    <Content Include="Content\assets\images\PageImage\Management.png" />
+    <Content Include="Content\assets\images\PageImage\powerclean.png" />
+    <Content Include="Content\assets\images\PageImage\security.png" />
+    <Content Include="Content\assets\images\PageImage\UniqueGroupLogo.png" />
+    <Content Include="Content\assets\images\pattren1.png" />
+    <Content Include="Content\assets\images\plus.png" />
+    <Content Include="Content\assets\images\portfolio-sm1.jpg" />
+    <Content Include="Content\assets\images\portfolio-sm2.jpg" />
+    <Content Include="Content\assets\images\portfolio-sm3.jpg" />
+    <Content Include="Content\assets\images\portfolio-sm4.jpg" />
+    <Content Include="Content\assets\images\portfolio-sm5.jpg" />
+    <Content Include="Content\assets\images\portfolio-sm6.jpg" />
+    <Content Include="Content\assets\images\portfolio1.jpg" />
+    <Content Include="Content\assets\images\portfolio2.jpg" />
+    <Content Include="Content\assets\images\portfolio3.jpg" />
+    <Content Include="Content\assets\images\portfolio4.jpg" />
+    <Content Include="Content\assets\images\portfolio5.jpg" />
+    <Content Include="Content\assets\images\portfolio6.jpg" />
+    <Content Include="Content\assets\images\presentation.png" />
+    <Content Include="Content\assets\images\recent-work.jpg" />
+    <Content Include="Content\assets\images\result-thumb.jpg" />
+    <Content Include="Content\assets\images\review-thumb.png" />
+    <Content Include="Content\assets\images\robinson.png" />
+    <Content Include="Content\assets\images\slider1.png" />
+    <Content Include="Content\assets\images\Sliders\facilities-management.jpg" />
+    <Content Include="Content\assets\images\Sliders\FM_Cofely01567_HD-bandeau.jpg" />
+    <Content Include="Content\assets\images\Sliders\img1.jpg" />
+    <Content Include="Content\assets\images\uncheck2.png" />
+    <Content Include="Content\assets\images\user-thumb.png" />
+    <Content Include="Content\assets\js\bootstrap.min.js" />
+    <Content Include="Content\assets\js\main.js" />
+    <Content Include="Content\assets\js\min\main.min.js" />
+    <Content Include="Content\assets\js\plugins.js" />
+    <Content Include="Content\assets\js\vendor\jquery-migrate-1.2.1.min.js.js" />
+    <Content Include="Content\assets\js\vendor\jquery-1.11.3.min.js" />
+    <Content Include="Content\assets\js\vendor\modernizr-2.8.3.min.js" />
+    <Content Include="Content\assets\plugins\blank.gif" />
+    <Content Include="Content\assets\plugins\fancybox_loading%402x.gif" />
+    <Content Include="Content\assets\plugins\fancybox_loading.gif" />
+    <Content Include="Content\assets\plugins\fancybox_overlay.png" />
+    <Content Include="Content\assets\plugins\fancybox_sprite%402x.png" />
+    <Content Include="Content\assets\plugins\fancybox_sprite.png" />
+    <Content Include="Content\assets\plugins\helpers\fancybox_buttons.png" />
+    <Content Include="Content\assets\plugins\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="Content\assets\plugins\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="Content\assets\plugins\helpers\jquery.fancybox-media.js" />
+    <Content Include="Content\assets\plugins\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="Content\assets\plugins\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="Content\assets\plugins\isotope.pkgd.min.js" />
+    <Content Include="Content\assets\plugins\jquery.bxslider.min.js" />
+    <Content Include="Content\assets\plugins\jquery.countdown.js" />
+    <Content Include="Content\assets\plugins\jquery.fancybox.css" />
+    <Content Include="Content\assets\plugins\jquery.fancybox.pack.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Home.aspx" />
+    <Content Include="PopUpASPNETSR\jquery-1.10.3-ui.css" />
+    <Content Include="PopUpASPNETSR\jquery-1.11.3.js" />
+    <Content Include="PopUpASPNETSR\jquery.1.10.3-ui.js" />
+    <Content Include="scriptsForPopUP\CSS\CSS.css" />
+    <Content Include="scriptsForPopUP\scripts\jquery-1.3.2.min.js" />
+    <Content Include="scriptsForPopUP\scripts\jquery.blockUI.js" />
+    <Content Include="SimpleModalPopup\jquery-1.8.9-ui.js" />
+    <Content Include="SimpleModalPopup\jquery-ui.css.css" />
+    <Content Include="SimpleModalPopup\jquery.1.7.2.min.js" />
+    <Content Include="SoftServicesWithSecondMasterCopy.aspx" />
+    <Content Include="SoftServicesWithSecondMaster.aspx" />
+    <Content Include="HardServicesWithSecondMaster.aspx" />
+    <Content Include="testReport.aspx" />
+    <Content Include="tile-wide.png" />
+    <Content Include="tile.png" />
+    <Content Include="UI\Home.aspx" />
+    <Content Include="Upcoming.aspx" />
+    <Content Include="UserRoleAssaign.aspx" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="RegisterUI.aspx" />
+    <Content Include="UserSetupUI.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebService1.asmx" />
+    <Content Include="WhoWeAre.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Career.aspx.cs">
+      <DependentUpon>Career.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Career.aspx.designer.cs">
+      <DependentUpon>Career.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CSR.aspx.cs">
+      <DependentUpon>CSR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CSR.aspx.designer.cs">
+      <DependentUpon>CSR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mission.aspx.cs">
+      <DependentUpon>Mission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mission.aspx.designer.cs">
+      <DependentUpon>Mission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vision.aspx.cs">
+      <DependentUpon>Vision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vision.aspx.designer.cs">
+      <DependentUpon>Vision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Goals.aspx.cs">
+      <DependentUpon>Goals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Goals.aspx.designer.cs">
+      <DependentUpon>Goals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Objective.aspx.cs">
+      <DependentUpon>Objective.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Objective.aspx.designer.cs">
+      <DependentUpon>Objective.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HansaDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HansaDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AskHansa.aspx.cs">
+      <DependentUpon>AskHansa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AskHansa.aspx.designer.cs">
+      <DependentUpon>AskHansa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\MessageConstants.cs" />
+    <Compile Include="Helper\MessageHelper.cs" />
+    <Compile Include="Management.aspx.cs">
+      <DependentUpon>Management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management.aspx.designer.cs">
+      <DependentUpon>Management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ongoing.aspx.cs">
+      <DependentUpon>Ongoing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ongoing.aspx.designer.cs">
+      <DependentUpon>Ongoing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUI.aspx.cs">
+      <DependentUpon>LoginUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginUI.aspx.designer.cs">
+      <DependentUpon>LoginUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\Employee.cs">
+      <DependentUpon>HansaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\Group.cs">
+      <DependentUpon>HansaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\GroupRole.cs">
+      <DependentUpon>HansaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\GroupUsers.cs">
+      <DependentUpon>HansaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\HansaDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HansaDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\HansaDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HansaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\HansaDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HansaDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\Menu.cs">
+      <DependentUpon>HansaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\Repository.cs" />
+    <Compile Include="Repository\Role.cs">
+      <DependentUpon>HansaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\RoleDetail.cs">
+      <DependentUpon>HansaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\SecurityObject.cs" />
+    <Compile Include="Repository\User.cs">
+      <DependentUpon>HansaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserActivationLink.cs">
+      <DependentUpon>HansaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserRatings.cs">
+      <DependentUpon>HansaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RiskManagementWithSecondMaster.aspx.cs">
+      <DependentUpon>RiskManagementWithSecondMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskManagementWithSecondMaster.aspx.designer.cs">
+      <DependentUpon>RiskManagementWithSecondMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PayPerUseWithSecondMaster.aspx.cs">
+      <DependentUpon>PayPerUseWithSecondMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayPerUseWithSecondMaster.aspx.designer.cs">
+      <DependentUpon>PayPerUseWithSecondMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RoleSetup.aspx.cs">
+      <DependentUpon>RoleSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoleSetup.aspx.designer.cs">
+      <DependentUpon>RoleSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rptEntityMonthlyEmpDriverOTS.cs" />
+    <Compile Include="ShowRDLC.aspx.cs">
+      <DependentUpon>ShowRDLC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowRDLC.aspx.designer.cs">
+      <DependentUpon>ShowRDLC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteHome.Master.cs">
+      <DependentUpon>SiteHome.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteHome.Master.designer.cs">
+      <DependentUpon>SiteHome.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteSecond.Master.cs">
+      <DependentUpon>SiteSecond.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteSecond.Master.designer.cs">
+      <DependentUpon>SiteSecond.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SoftServices.aspx.cs">
+      <DependentUpon>SoftServices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SoftServices.aspx.designer.cs">
+      <DependentUpon>SoftServices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementWpopup.aspx.cs">
+      <DependentUpon>ManagementWpopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementWpopup.aspx.designer.cs">
+      <DependentUpon>ManagementWpopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Background.aspx.cs">
+      <DependentUpon>Background.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Background.aspx.designer.cs">
+      <DependentUpon>Background.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SoftServicesWithSecondMasterCopy.aspx.cs">
+      <DependentUpon>SoftServicesWithSecondMasterCopy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SoftServicesWithSecondMasterCopy.aspx.designer.cs">
+      <DependentUpon>SoftServicesWithSecondMasterCopy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SoftServicesWithSecondMaster.aspx.cs">
+      <DependentUpon>SoftServicesWithSecondMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SoftServicesWithSecondMaster.aspx.designer.cs">
+      <DependentUpon>SoftServicesWithSecondMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HardServicesWithSecondMaster.aspx.cs">
+      <DependentUpon>HardServicesWithSecondMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HardServicesWithSecondMaster.aspx.designer.cs">
+      <DependentUpon>HardServicesWithSecondMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testReport.aspx.cs">
+      <DependentUpon>testReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testReport.aspx.designer.cs">
+      <DependentUpon>testReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upcoming.aspx.cs">
+      <DependentUpon>Upcoming.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upcoming.aspx.designer.cs">
+      <DependentUpon>Upcoming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRoleAssaign.aspx.cs">
+      <DependentUpon>UserRoleAssaign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRoleAssaign.aspx.designer.cs">
+      <DependentUpon>UserRoleAssaign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterUI.aspx.cs">
+      <DependentUpon>RegisterUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterUI.aspx.designer.cs">
+      <DependentUpon>RegisterUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserSetupUI.aspx.cs">
+      <DependentUpon>UserSetupUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserSetupUI.aspx.designer.cs">
+      <DependentUpon>UserSetupUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService1.asmx.cs">
+      <DependentUpon>WebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WhoWeAre.aspx.cs">
+      <DependentUpon>WhoWeAre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WhoWeAre.aspx.designer.cs">
+      <DependentUpon>WhoWeAre.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\assets\fonts\Roboto-Black-webfont.eot" />
+    <Content Include="Content\assets\fonts\Roboto-Black-webfont.svg" />
+    <Content Include="Content\assets\fonts\Roboto-Black-webfont.ttf" />
+    <Content Include="Content\assets\fonts\Roboto-Black-webfont.woff" />
+    <Content Include="Content\assets\fonts\Roboto-Bold-webfont.eot" />
+    <Content Include="Content\assets\fonts\Roboto-Bold-webfont.svg" />
+    <Content Include="Content\assets\fonts\Roboto-Bold-webfont.ttf" />
+    <Content Include="Content\assets\fonts\Roboto-Bold-webfont.woff" />
+    <Content Include="Content\assets\fonts\Roboto-Light-webfont.eot" />
+    <Content Include="Content\assets\fonts\Roboto-Light-webfont.svg" />
+    <Content Include="Content\assets\fonts\Roboto-Light-webfont.ttf" />
+    <Content Include="Content\assets\fonts\Roboto-Light-webfont.woff" />
+    <Content Include="Content\assets\fonts\Roboto-LightItalic-webfont.eot" />
+    <Content Include="Content\assets\fonts\Roboto-LightItalic-webfont.svg" />
+    <Content Include="Content\assets\fonts\Roboto-LightItalic-webfont.ttf" />
+    <Content Include="Content\assets\fonts\Roboto-LightItalic-webfont.woff" />
+    <Content Include="Content\assets\fonts\Roboto-Regular-webfont.eot" />
+    <Content Include="Content\assets\fonts\Roboto-Regular-webfont.svg" />
+    <Content Include="Content\assets\fonts\Roboto-Regular-webfont.ttf" />
+    <Content Include="Content\assets\fonts\Roboto-Regular-webfont.woff" />
+    <Content Include="Content\assets\fonts\RobotoCondensed-Regular-webfont.eot" />
+    <Content Include="Content\assets\fonts\RobotoCondensed-Regular-webfont.svg" />
+    <Content Include="Content\assets\fonts\RobotoCondensed-Regular-webfont.ttf" />
+    <Content Include="Content\assets\fonts\RobotoCondensed-Regular-webfont.woff" />
+    <Content Include="Content\assets\less\inc\accordion.less" />
+    <Content Include="Content\assets\less\inc\buttons.less" />
+    <Content Include="Content\assets\less\inc\comments.less" />
+    <Content Include="Content\assets\less\inc\content.less" />
+    <Content Include="Content\assets\less\inc\dropdown.less" />
+    <Content Include="Content\assets\less\inc\footer.less" />
+    <Content Include="Content\assets\less\inc\form.less" />
+    <Content Include="Content\assets\less\inc\header.less" />
+    <Content Include="Content\assets\less\inc\pagination.less" />
+    <Content Include="Content\assets\less\inc\progress.less" />
+    <Content Include="Content\assets\less\inc\sidebar.less" />
+    <Content Include="Content\assets\less\inc\socials.less" />
+    <Content Include="Content\assets\less\inc\widgets.less" />
+    <Content Include="Content\assets\less\mixins.less" />
+    <Content Include="Content\assets\less\style.less" />
+    <Content Include="Content\assets\less\variables.less" />
+    <Content Include="Content\assets\scss\inc\_accordion.scss" />
+    <Content Include="Content\assets\scss\inc\_buttons.scss" />
+    <Content Include="Content\assets\scss\inc\_comments.scss" />
+    <Content Include="Content\assets\scss\inc\_content.scss" />
+    <Content Include="Content\assets\scss\inc\_dropdown.scss" />
+    <Content Include="Content\assets\scss\inc\_footer.scss" />
+    <Content Include="Content\assets\scss\inc\_form.scss" />
+    <Content Include="Content\assets\scss\inc\_header.scss" />
+    <Content Include="Content\assets\scss\inc\_pagination.scss" />
+    <Content Include="Content\assets\scss\inc\_progress.scss" />
+    <Content Include="Content\assets\scss\inc\_sidebar.scss" />
+    <Content Include="Content\assets\scss\inc\_socials.scss" />
+    <Content Include="Content\assets\scss\inc\_widgets.scss" />
+    <Content Include="Content\assets\scss\style.scss" />
+    <Content Include="Content\assets\scss\_mixins.scss" />
+    <Content Include="Content\assets\scss\_variables.scss" />
+    <Content Include="Site.Master" />
+    <Content Include="packages.config" />
+    <Content Include="SiteSecond.Master" />
+    <Content Include="SiteHome.Master" />
+    <Content Include="HansaDBDataSet.xsc">
+      <DependentUpon>HansaDBDataSet.xsd</DependentUpon>
+    </Content>
+    <Fakes Include="Fakes\MSCaptcha.fakes" />
+    <None Include="HansaDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HansaDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="HansaDBDataSet.xss">
+      <DependentUpon>HansaDBDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\Hansa_Pub.pubxml" />
+    <EntityDeploy Include="Repository\HansaDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HansaDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Repository\HansaDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HansaDB.edmx</DependentUpon>
+      <LastGenOutput>HansaDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Repository\HansaDB.edmx.diagram">
+      <DependentUpon>HansaDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="Repository\HansaDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HansaDB.edmx</DependentUpon>
+      <LastGenOutput>HansaDB.cs</LastGenOutput>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DomainClass\DomainClass.csproj">
+      <Project>{d1120995-f058-4e6d-9643-c44b16a13fba}</Project>
+      <Name>DomainClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14735</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:14736/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

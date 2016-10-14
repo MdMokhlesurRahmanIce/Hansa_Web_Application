@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HansaDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UserActivationLink">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ActivationCode" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="SecurityQuestion" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Answer" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="EntryDate" Type="datetime" />
+    <Property Name="FirstName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="CapchaCode" Type="varchar" MaxLength="200" />
+    <Property Name="Phone" Type="varchar" MaxLength="200" />
+    <Property Name="Address" Type="varchar" MaxLength="200" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="200" />
+    <Property Name="IPAddress" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="UserRatings">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rating" Type="int" />
+    <Property Name="Comments" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="GroupCode" />
+    </Key>
+    <Property Name="GroupCode" Type="int" Nullable="false" />
+    <Property Name="GroupName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="GroupRole">
+    <Key>
+      <PropertyRef Name="GroupCode" />
+      <PropertyRef Name="RoleCode" />
+    </Key>
+    <Property Name="GroupCode" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="RoleCode" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HansaSqlInjection.UserAccess.GroupUsers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GroupUsers">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="GroupCode" />
+    </Key>
+    <Property Name="UserID" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="GroupCode" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="Caption" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="ToolTip" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Location" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ModuleID" Type="int" Nullable="false" />
+    <Property Name="MenuOrder" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleCode" />
+    </Key>
+    <Property Name="RoleCode" Type="int" Nullable="false" />
+    <Property Name="RoleName" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="RoleDescription" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RoleDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="MenuID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RoleCode" Type="int" Nullable="false" />
+    <Property Name="CanSelect" Type="bit" Nullable="false" />
+    <Property Name="CanInsert" Type="bit" Nullable="false" />
+    <Property Name="CanUpdate" Type="bit" Nullable="false" />
+    <Property Name="CanDelete" Type="bit" Nullable="false" />
+    <Property Name="CanSend" Type="bit" />
+    <Property Name="CanCheck" Type="bit" />
+    <Property Name="CanApprove" Type="bit" />
+    <Property Name="CanPreview" Type="bit" Nullable="false" />
+    <Property Name="AllChk" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="SecurityQuestion" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Answer" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="StatusID" Type="int" />
+    <Property Name="EntryUserID" Type="int" />
+    <Property Name="EntryDate" Type="datetime" />
+    <Property Name="UpdateUserID" Type="int" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="IsAdmin" Type="bit" />
+    <Property Name="ThanaID" Type="smallint" />
+    <Property Name="DivisionID" Type="smallint" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="FirstName" Type="varchar" MaxLength="200" />
+    <Property Name="LastName" Type="varchar" MaxLength="200" />
+    <Property Name="CapchaCode" Type="varchar" MaxLength="200" />
+    <Property Name="Phone" Type="varchar" MaxLength="200" />
+    <Property Name="Address" Type="varchar" MaxLength="200" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="200" />
+    <Property Name="IPAddress" Type="varchar" MaxLength="200" />
+    <Property Name="DefaultAllViwerForCommon" Type="bit" />
+  </EntityType>
+  <Association Name="FK_RoleDetail_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="RoleDetail" Type="Self.RoleDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleCode" />
+      </Principal>
+      <Dependent Role="RoleDetail">
+        <PropertyRef Name="RoleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HansaDBModelStoreContainer">
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserActivationLink" EntityType="Self.UserActivationLink" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserRatings" EntityType="Self.UserRatings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Group" EntityType="Self.Group" Schema="UserAccess" store:Type="Tables" />
+    <EntitySet Name="GroupRole" EntityType="Self.GroupRole" Schema="UserAccess" store:Type="Tables" />
+    <EntitySet Name="Menu" EntityType="Self.Menu" Schema="UserAccess" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="UserAccess" store:Type="Tables" />
+    <EntitySet Name="RoleDetail" EntityType="Self.RoleDetail" Schema="UserAccess" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="UserAccess" store:Type="Tables" />
+    <EntitySet Name="GroupUsers" EntityType="Self.GroupUsers" store:Type="Tables" store:Schema="UserAccess">
+      <DefiningQuery>SELECT 
+    [GroupUsers].[UserID] AS [UserID], 
+    [GroupUsers].[GroupCode] AS [GroupCode]
+    FROM [UserAccess].[GroupUsers] AS [GroupUsers]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_RoleDetail_Role" Association="Self.FK_RoleDetail_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="RoleDetail" EntitySet="RoleDetail" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

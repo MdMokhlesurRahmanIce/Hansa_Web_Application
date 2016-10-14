@@ -1,0 +1,1171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Hansa_Pub</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>10/12/2015 09:07:30</publishTime>
+    </File>
+    <File Include="apple-touch-icon.png">
+      <publishTime>08/04/2015 08:37:21</publishTime>
+    </File>
+    <File Include="AskHansa.aspx">
+      <publishTime>10/10/2015 16:56:21</publishTime>
+    </File>
+    <File Include="Background.aspx">
+      <publishTime>08/11/2015 14:31:08</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>09/29/2009 02:57:54</publishTime>
+    </File>
+    <File Include="bin/DomainClass.dll">
+      <publishTime>10/24/2015 18:26:12</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>08/05/2015 15:02:05</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>08/05/2015 15:02:05</publishTime>
+    </File>
+    <File Include="bin/Hansa.Web.dll">
+      <publishTime>10/24/2015 22:53:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.QualityTools.Testing.Fakes.dll">
+      <publishTime>03/15/2013 00:05:56</publishTime>
+    </File>
+    <File Include="bin/MSCaptcha.4.0.4250.31585.Fakes.dll">
+      <publishTime>10/24/2015 22:53:24</publishTime>
+    </File>
+    <File Include="bin/MSCaptcha.4.0.4250.31585.Fakes.fakesconfig">
+      <publishTime>10/24/2015 22:53:24</publishTime>
+    </File>
+    <File Include="bin/MSCaptcha.dll">
+      <publishTime>08/21/2011 18:32:51</publishTime>
+    </File>
+    <File Include="Career.aspx">
+      <publishTime>10/12/2015 13:51:11</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/9-22-2015 11-57-21 AM.jpg">
+      <publishTime>09/22/2015 12:22:14</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/AmaderSomoy.png">
+      <publishTime>09/16/2015 10:05:28</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/BanglaTel.png">
+      <publishTime>09/16/2015 10:05:28</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/BorakShiping.png">
+      <publishTime>09/16/2015 10:05:28</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/ClientBoraklogo.png">
+      <publishTime>09/16/2015 15:55:48</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/group_logo_all.png">
+      <publishTime>09/16/2015 10:05:28</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/UCI.bmp">
+      <publishTime>09/22/2015 12:22:14</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/UE.jpg">
+      <publishTime>09/22/2015 12:22:14</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/UHRLLOGO.jpg">
+      <publishTime>09/22/2015 12:22:14</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/Umcpl.png">
+      <publishTime>09/16/2015 10:05:28</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/UniqueCeramics.png">
+      <publishTime>09/16/2015 10:05:28</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/UniqueEastern.png">
+      <publishTime>09/16/2015 10:05:28</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/UniqueHotel.png">
+      <publishTime>09/16/2015 10:05:28</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/UniqueProperties.png">
+      <publishTime>09/16/2015 10:05:28</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/UniqueShareMngmnt.png">
+      <publishTime>09/16/2015 10:05:28</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/UniqueVocationalTraining.png">
+      <publishTime>09/16/2015 10:05:28</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/Update.png">
+      <publishTime>09/16/2015 10:05:28</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/UPDL-Logo.jpg">
+      <publishTime>09/22/2015 12:22:14</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/UVTC.jpg">
+      <publishTime>09/22/2015 12:22:14</publishTime>
+    </File>
+    <File Include="Content/assets/ClientLogoPNG/Westin.png">
+      <publishTime>09/16/2015 10:05:28</publishTime>
+    </File>
+    <File Include="Content/assets/css/bootstrap.min.css">
+      <publishTime>08/08/2015 14:40:41</publishTime>
+    </File>
+    <File Include="Content/assets/css/font-awesome.min.css">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/css/style.css">
+      <publishTime>10/13/2015 13:07:08</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Black-webfont.eot">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Black-webfont.svg">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Black-webfont.ttf">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Black-webfont.woff">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Bold-webfont.eot">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Bold-webfont.svg">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Bold-webfont.ttf">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Bold-webfont.woff">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Light-webfont.eot">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Light-webfont.svg">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Light-webfont.ttf">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Light-webfont.woff">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-LightItalic-webfont.eot">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-LightItalic-webfont.svg">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-LightItalic-webfont.ttf">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-LightItalic-webfont.woff">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Regular-webfont.eot">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Regular-webfont.svg">
+      <publishTime>08/04/2015 08:33:24</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Regular-webfont.ttf">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/Roboto-Regular-webfont.woff">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/RobotoCondensed-Regular-webfont.eot">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/RobotoCondensed-Regular-webfont.svg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/RobotoCondensed-Regular-webfont.ttf">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/RobotoCondensed-Regular-webfont.woff">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/fonts/stylesheet.css">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/4jobs.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/blog1.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/captcha.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/caret-right.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/check.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/check2.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/client1.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/client2.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/client3.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/client4.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/client5.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/client6.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/comment-thumb.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/darker.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/demo.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/footer-logo.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/HansaLogoOriginal.jpg">
+      <publishTime>08/08/2015 15:06:51</publishTime>
+    </File>
+    <File Include="Content/assets/images/img1.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/img1.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/impactmedia.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/jobthumb.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/logo.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/LogoImage/ClientBoraklogo.png">
+      <publishTime>09/14/2015 13:15:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/LogoImage/cream_pixels.png">
+      <publishTime>09/17/2015 13:13:34</publishTime>
+    </File>
+    <File Include="Content/assets/images/LogoImage/HansaLogo.jpg">
+      <publishTime>08/22/2015 11:18:45</publishTime>
+    </File>
+    <File Include="Content/assets/images/LogoImage/HansaLogo.png">
+      <publishTime>08/09/2015 11:48:56</publishTime>
+    </File>
+    <File Include="Content/assets/images/LogoImage/HANSALOGOFINAL.png">
+      <publishTime>10/13/2015 09:39:08</publishTime>
+    </File>
+    <File Include="Content/assets/images/LogoImage/LogoGroup%282%29.png">
+      <publishTime>08/22/2015 11:21:58</publishTime>
+    </File>
+    <File Include="Content/assets/images/LogoImage/LogoGroup_Back.png">
+      <publishTime>09/22/2015 14:57:55</publishTime>
+    </File>
+    <File Include="Content/assets/images/LogoImage/Ugnewlogotransparent.png">
+      <publishTime>10/12/2015 12:52:19</publishTime>
+    </File>
+    <File Include="Content/assets/images/LogoImage/UniqueGroupLogo.png">
+      <publishTime>08/19/2015 08:49:37</publishTime>
+    </File>
+    <File Include="Content/assets/images/marker.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/medition.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/member.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/minus.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/babysitter.jpg">
+      <publishTime>10/10/2015 09:30:24</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/BackgroundWWare.png">
+      <publishTime>08/11/2015 10:54:51</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/beauty_care.jpg">
+      <publishTime>10/10/2015 09:31:01</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/BoardOfDirectors.png">
+      <publishTime>08/12/2015 13:06:11</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/car_mechanic.jpg">
+      <publishTime>10/10/2015 09:34:38</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/car_wash.jpg">
+      <publishTime>10/10/2015 09:24:02</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/catering_services.jpg">
+      <publishTime>10/10/2015 09:35:17</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/Chairman.png">
+      <publishTime>08/11/2015 11:58:49</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/Chairman2.png">
+      <publishTime>10/05/2015 09:54:00</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/chairman_3.png">
+      <publishTime>10/07/2015 13:39:18</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/ChiefAdvisor.png">
+      <publishTime>08/12/2015 13:43:35</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/ChiefAdvisorImg.jpg">
+      <publishTime>09/17/2015 10:59:03</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/cleaning.jpg">
+      <publishTime>08/20/2015 08:32:43</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/cleaning.png">
+      <publishTime>08/11/2015 09:18:08</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/CleaningHousekeeping.jpg">
+      <publishTime>10/10/2015 09:47:10</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/CleaningNHouseKeepingDown.png">
+      <publishTime>08/16/2015 10:39:13</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/CleaningNHouseKeepingUp.png">
+      <publishTime>08/16/2015 10:38:36</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/cleaning_services.jpg">
+      <publishTime>08/19/2015 16:28:47</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/constraction_maintenance.jpg">
+      <publishTime>10/10/2015 09:10:54</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/ConstructionMaintanance.png">
+      <publishTime>08/16/2015 10:43:26</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/contract_mngment.jpg">
+      <publishTime>10/10/2015 09:25:51</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/CSR.png">
+      <publishTime>08/17/2015 14:25:05</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/CSR1.jpg">
+      <publishTime>09/17/2015 09:52:00</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/CSR2.jpg">
+      <publishTime>09/17/2015 09:52:00</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/disaster-kit.jpg">
+      <publishTime>10/10/2015 09:37:40</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/DisasterManagement.png">
+      <publishTime>08/16/2015 10:50:08</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/engineering.png">
+      <publishTime>08/11/2015 09:18:08</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/exclusive_cleaning.jpg">
+      <publishTime>10/10/2015 09:27:18</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/FacadeCleaning.png">
+      <publishTime>08/16/2015 10:45:51</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/facade_cleaning.jpg">
+      <publishTime>10/10/2015 09:17:36</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/First-Fund-Management-Swift-Messages.jpg">
+      <publishTime>10/10/2015 09:24:55</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/GarbageDisposalNManagement.png">
+      <publishTime>08/16/2015 10:40:08</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/garbage_dispsoe.jpg">
+      <publishTime>10/10/2015 09:44:57</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/garbage_dispsoe_tr.jpg">
+      <publishTime>09/08/2015 09:47:06</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/HansaLogo-Icon.png">
+      <publishTime>08/13/2015 08:44:37</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/HansaLogo.png">
+      <publishTime>08/09/2015 11:48:56</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/hardservice.jpg">
+      <publishTime>10/10/2015 09:02:36</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/HardServices.png">
+      <publishTime>08/16/2015 10:42:33</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/homecare.png">
+      <publishTime>08/11/2015 09:18:08</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/houeskeeping-1a.jpg">
+      <publishTime>08/20/2015 08:33:04</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/InsuranceManagement.png">
+      <publishTime>08/16/2015 10:49:33</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/insurance_management.jpg">
+      <publishTime>10/10/2015 09:37:02</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/Landscaping-1.png">
+      <publishTime>10/10/2015 09:43:44</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/landscaping.png">
+      <publishTime>08/11/2015 09:18:08</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/LandscapingInSoftServicePopUp.png">
+      <publishTime>08/16/2015 10:41:09</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/laundry.jpg">
+      <publishTime>10/10/2015 09:28:12</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/Management.png">
+      <publishTime>08/11/2015 11:31:29</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/ManagingDirector.png">
+      <publishTime>08/11/2015 15:48:02</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/massage.jpg">
+      <publishTime>10/10/2015 09:33:48</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/mepNeme.jpg">
+      <publishTime>10/10/2015 09:16:05</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/MEPOREME.png">
+      <publishTime>08/16/2015 10:44:04</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/Parvez%282%29[2].jpg">
+      <publishTime>09/17/2015 16:38:01</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/PasteControl.png">
+      <publishTime>08/16/2015 10:41:53</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/PayPerUse.png">
+      <publishTime>08/16/2015 10:47:38</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/pay_per_use.jpg">
+      <publishTime>10/10/2015 09:03:33</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/personal_trainer.jpg">
+      <publishTime>10/10/2015 09:28:52</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/pest1.png">
+      <publishTime>10/10/2015 09:42:52</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/petcare.jpg">
+      <publishTime>10/10/2015 09:29:43</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/powerclean.png">
+      <publishTime>08/11/2015 09:18:08</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/Preamplifier_at_the_National_Ignition_Facility.jpg">
+      <publishTime>08/20/2015 08:35:36</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/property_sale_and_rental.jpg">
+      <publishTime>10/10/2015 09:23:05</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/renovation.jpg">
+      <publishTime>10/10/2015 09:16:54</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/RenovationNEnteriorSolution.png">
+      <publishTime>08/16/2015 10:45:05</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/riskManagement.jpg">
+      <publishTime>09/08/2015 09:47:07</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/RiskManagement.png">
+      <publishTime>08/16/2015 10:48:14</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/safety_large.jpg">
+      <publishTime>10/10/2015 09:36:23</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/Safty.png">
+      <publishTime>08/16/2015 10:48:49</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/security surveilence.jpg">
+      <publishTime>08/20/2015 08:31:38</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/security.png">
+      <publishTime>08/11/2015 09:18:08</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/SecurityNServillance.png">
+      <publishTime>08/16/2015 10:37:14</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/security_surveilence%281%29.jpg">
+      <publishTime>08/20/2015 08:32:36</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/security_surveilence%281%29.png">
+      <publishTime>10/10/2015 09:46:09</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/SoftServices.png">
+      <publishTime>08/16/2015 10:36:23</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/soft_service.jpg">
+      <publishTime>10/10/2015 09:01:38</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/UniqueGroupLogo-Icon.png">
+      <publishTime>08/13/2015 08:49:48</publishTime>
+    </File>
+    <File Include="Content/assets/images/PageImage/UniqueGroupLogo.png">
+      <publishTime>08/09/2015 11:47:30</publishTime>
+    </File>
+    <File Include="Content/assets/images/pattren1.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/plus.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/portfolio-sm1.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/portfolio-sm2.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/portfolio-sm3.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/portfolio-sm4.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/portfolio-sm5.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/portfolio-sm6.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/portfolio1.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/portfolio2.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/portfolio3.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/portfolio4.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/portfolio5.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/portfolio6.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/presentation.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/recent-work.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/result-thumb.jpg">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/review-thumb.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/robinson.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/Cleaning1.png">
+      <publishTime>09/21/2015 14:14:54</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/cleaning2.png">
+      <publishTime>09/21/2015 14:15:30</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/cleaning3.png">
+      <publishTime>09/21/2015 14:15:48</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/cleaning4.png">
+      <publishTime>09/21/2015 14:16:12</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/cleaning5.png">
+      <publishTime>09/21/2015 14:16:41</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/cleaning6.png">
+      <publishTime>09/21/2015 14:17:24</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FacadeCleaning1.png">
+      <publishTime>09/22/2015 10:48:24</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FMCLN_1.png">
+      <publishTime>09/22/2015 10:56:26</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FMCLN_10.png">
+      <publishTime>09/22/2015 11:01:11</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FMCLN_11.png">
+      <publishTime>09/22/2015 11:02:10</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FMCLN_12.png">
+      <publishTime>09/22/2015 11:02:28</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FMCLN_13.png">
+      <publishTime>09/22/2015 11:02:58</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FMCLN_14.png">
+      <publishTime>09/22/2015 11:03:55</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FMCLN_2.png">
+      <publishTime>09/22/2015 10:56:55</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FMCLN_3.png">
+      <publishTime>09/22/2015 10:57:21</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FMCLN_4.png">
+      <publishTime>09/22/2015 10:57:44</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FMCLN_5.png">
+      <publishTime>09/22/2015 10:58:03</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FMCLN_6.png">
+      <publishTime>09/22/2015 10:59:08</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FMCLN_7.png">
+      <publishTime>09/22/2015 10:59:32</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FMCLN_8.png">
+      <publishTime>09/22/2015 10:59:58</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/FMCLN_9.png">
+      <publishTime>09/22/2015 11:00:50</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/pestControl1.png">
+      <publishTime>09/21/2015 14:18:07</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/pestControl2.png">
+      <publishTime>09/21/2015 14:18:34</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/pestControl3.png">
+      <publishTime>09/21/2015 14:19:14</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/pestControl4.png">
+      <publishTime>09/21/2015 14:19:33</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/pestControl5.png">
+      <publishTime>09/21/2015 14:21:12</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/pestControl6.png">
+      <publishTime>09/21/2015 14:22:11</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/security1.png">
+      <publishTime>09/21/2015 14:12:37</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/security2.png">
+      <publishTime>09/21/2015 14:12:58</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/security3.png">
+      <publishTime>09/21/2015 14:13:23</publishTime>
+    </File>
+    <File Include="Content/assets/images/ServicesPopUpImages/security4.png">
+      <publishTime>09/21/2015 14:14:20</publishTime>
+    </File>
+    <File Include="Content/assets/images/slider1.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/COMPLETED/RCBT/RCBT.jpg">
+      <publishTime>09/29/2015 10:56:20</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/COMPLETED/The Westin Dhaka/EXT2.jpg">
+      <publishTime>09/29/2015 10:56:59</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/COMPLETED/Unique Oval/DSC_8353.JPG">
+      <publishTime>09/29/2015 10:57:42</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/COMPLETED/Unique Oval/DSC_8368.JPG">
+      <publishTime>09/29/2015 10:58:14</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/COMPLETED/Unique Oval/Oval 3.jpg">
+      <publishTime>09/29/2015 10:58:47</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/COMPLETED/UTC/UTC-2.jpg">
+      <publishTime>09/29/2015 11:01:32</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/COMPLETED/UTC/utc.jpg">
+      <publishTime>09/29/2015 11:01:05</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/facilities-management.jpg">
+      <publishTime>10/15/2015 13:18:37</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/FM_Cofely01567_HD-bandeau.jpg">
+      <publishTime>10/15/2015 13:19:01</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/Heights.png">
+      <publishTime>08/17/2015 16:03:33</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/Heights1.jpg">
+      <publishTime>08/17/2015 15:42:48</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/img1.jpg">
+      <publishTime>10/15/2015 13:19:21</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Acropolis/rendering%281%29.jpg">
+      <publishTime>08/20/2015 10:41:04</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Acropolis/rendering%282%29.jpg">
+      <publishTime>08/20/2015 10:42:02</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Banani DCC Unique Complex/150223_DCC_A.RGB_color111.jpg">
+      <publishTime>08/20/2015 10:38:55</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Banani DCC Unique Complex/150304_DCC_B.RGB_color.jpg">
+      <publishTime>08/20/2015 10:47:51</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Banani DCC Unique Complex/150304_DCC_C0.RGB_color.jpg">
+      <publishTime>08/20/2015 10:38:56</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Banani DCC Unique Complex/150304_DCC_D.RGB_color.jpg">
+      <publishTime>08/20/2015 10:38:56</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Banani DCC Unique Complex/150304_DCC_E.RGB_color.jpg">
+      <publishTime>08/20/2015 10:38:57</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Borak Biz Center/FINAL70DilkushaPic.jpg">
+      <publishTime>08/20/2015 10:51:41</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Borak Chowdhury Sprinkle/Sprinkle-01_View01-1.jpg">
+      <publishTime>08/20/2015 10:55:17</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Borak Mahnur/BORAK MEHNUR opt 1 night.jpg">
+      <publishTime>09/19/2015 09:32:13</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Borak Mahnur/BORAK MEHNUR opt 1.jpg">
+      <publishTime>09/19/2015 09:24:17</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Borak Mahnur/BORAK MEHNUR opt2.jpg">
+      <publishTime>08/20/2015 10:38:57</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Borak Park Valley/Park Valley Image.jpg">
+      <publishTime>09/19/2015 09:25:39</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Borak Zahir Tower/BZ edited.jpg">
+      <publishTime>08/20/2015 10:38:58</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Borak Zahir Tower/ZOHIR TOWER_02b.jpg">
+      <publishTime>09/19/2015 09:21:34</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/RCBT.jpg">
+      <publishTime>09/23/2015 12:09:57</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/ONGOING/Unique Heights/Heights 1.jpg">
+      <publishTime>09/19/2015 09:22:32</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/UPCOMING/at Rampura/View-1.jpg">
+      <publishTime>09/02/2015 14:29:21</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/UPCOMING/Borak Green Living/CAM 1%282%29copy.png">
+      <publishTime>08/20/2015 16:51:18</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/UPCOMING/Minerva/Map_324.jpg">
+      <publishTime>08/20/2015 16:52:12</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/UPCOMING/Westin South Plaza/1.jpg">
+      <publishTime>09/02/2015 14:43:39</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/UPCOMING/Westin South Plaza/4.jpg">
+      <publishTime>08/20/2015 10:38:55</publishTime>
+    </File>
+    <File Include="Content/assets/images/Sliders/UPCOMING/Westin South Plaza/Untitled.png">
+      <publishTime>08/20/2015 10:38:55</publishTime>
+    </File>
+    <File Include="Content/assets/images/uncheck2.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/images/user-thumb.png">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/ImagesForRatings/FilleddImage80.jpg">
+      <publishTime>09/09/2015 15:21:37</publishTime>
+    </File>
+    <File Include="Content/assets/ImagesForRatings/FilledStar.gif">
+      <publishTime>09/09/2015 09:21:28</publishTime>
+    </File>
+    <File Include="Content/assets/ImagesForRatings/FilledStarImg.png">
+      <publishTime>09/09/2015 10:06:05</publishTime>
+    </File>
+    <File Include="Content/assets/ImagesForRatings/Star.gif">
+      <publishTime>09/09/2015 09:21:28</publishTime>
+    </File>
+    <File Include="Content/assets/ImagesForRatings/staredImage80.jpg">
+      <publishTime>09/09/2015 15:21:38</publishTime>
+    </File>
+    <File Include="Content/assets/ImagesForRatings/StarImg.png">
+      <publishTime>09/09/2015 10:06:05</publishTime>
+    </File>
+    <File Include="Content/assets/ImagesForRatings/waitImage80.jpg">
+      <publishTime>09/09/2015 15:21:39</publishTime>
+    </File>
+    <File Include="Content/assets/ImagesForRatings/WaitingStar.gif">
+      <publishTime>09/09/2015 09:21:28</publishTime>
+    </File>
+    <File Include="Content/assets/ImagesForRatings/WaitingStarImg.png">
+      <publishTime>09/09/2015 10:06:05</publishTime>
+    </File>
+    <File Include="Content/assets/js/bootstrap.min.js">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/js/main.js">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/js/min/main.min.js">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/js/plugins.js">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/js/vendor/jquery-1.11.3.min.js">
+      <publishTime>08/10/2015 13:21:21</publishTime>
+    </File>
+    <File Include="Content/assets/js/vendor/jquery-migrate-1.2.1.min.js.js">
+      <publishTime>08/10/2015 13:26:46</publishTime>
+    </File>
+    <File Include="Content/assets/js/vendor/modernizr-2.8.3.min.js">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/inc/accordion.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/inc/buttons.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/inc/comments.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/inc/content.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/inc/dropdown.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/inc/footer.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/inc/form.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/inc/header.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/inc/pagination.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/inc/progress.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/inc/sidebar.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/inc/socials.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/inc/widgets.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/mixins.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/style.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/less/variables.less">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/blank.gif">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/fancybox_loading%402x.gif">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/fancybox_loading.gif">
+      <publishTime>08/04/2015 08:33:25</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/fancybox_overlay.png">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/fancybox_sprite%402x.png">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/fancybox_sprite.png">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/helpers/fancybox_buttons.png">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/helpers/jquery.fancybox-buttons.css">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/helpers/jquery.fancybox-buttons.js">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/helpers/jquery.fancybox-media.js">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/helpers/jquery.fancybox-thumbs.css">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/helpers/jquery.fancybox-thumbs.js">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/isotope.pkgd.min.js">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/jquery.bxslider.min.js">
+      <publishTime>08/31/2015 10:50:29</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/jquery.countdown.js">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/jquery.fancybox.css">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/jquery.fancybox.pack.js">
+      <publishTime>08/31/2015 10:48:59</publishTime>
+    </File>
+    <File Include="Content/assets/plugins/jquery.fancybox1.css">
+      <publishTime>08/31/2015 11:26:15</publishTime>
+    </File>
+    <File Include="Content/assets/scss/inc/_accordion.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/inc/_buttons.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/inc/_comments.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/inc/_content.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/inc/_dropdown.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/inc/_footer.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/inc/_form.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/inc/_header.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/inc/_pagination.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/inc/_progress.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/inc/_sidebar.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/inc/_socials.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/inc/_widgets.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/style.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/_mixins.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="Content/assets/scss/_variables.scss">
+      <publishTime>08/04/2015 08:33:26</publishTime>
+    </File>
+    <File Include="CSR.aspx">
+      <publishTime>10/12/2015 11:56:16</publishTime>
+    </File>
+    <File Include="Faq.aspx">
+      <publishTime>09/17/2015 14:55:26</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>08/04/2015 08:37:21</publishTime>
+    </File>
+    <File Include="Feedback.aspx">
+      <publishTime>09/20/2015 09:25:09</publishTime>
+    </File>
+    <File Include="ForBootStrapPopUp/1.11.3jquery.min.js">
+      <publishTime>08/18/2015 14:20:18</publishTime>
+    </File>
+    <File Include="ForBootStrapPopUp/3.3.5bootstrap.min.css">
+      <publishTime>08/18/2015 14:18:56</publishTime>
+    </File>
+    <File Include="ForBootStrapPopUp/3.3.5bootstrap.min.js">
+      <publishTime>08/18/2015 14:21:55</publishTime>
+    </File>
+    <File Include="ForLoginScreen/LogIn.css">
+      <publishTime>09/14/2015 12:25:03</publishTime>
+    </File>
+    <File Include="ForLoginScreen/LogIn.js">
+      <publishTime>08/27/2015 08:40:20</publishTime>
+    </File>
+    <File Include="ForLoginScreen/Registration.css">
+      <publishTime>09/14/2015 12:23:12</publishTime>
+    </File>
+    <File Include="Goals.aspx">
+      <publishTime>10/07/2015 10:55:24</publishTime>
+    </File>
+    <File Include="HansaDB.edmx.diagram">
+      <publishTime>08/24/2015 10:55:58</publishTime>
+    </File>
+    <File Include="HansaDBDataSet.xsc">
+      <publishTime>09/07/2015 13:47:57</publishTime>
+    </File>
+    <File Include="HansaDBDataSet.xss">
+      <publishTime>09/07/2015 13:47:57</publishTime>
+    </File>
+    <File Include="HardServicesWithSecondMaster.aspx">
+      <publishTime>10/14/2015 16:35:31</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>10/12/2015 11:48:09</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>08/27/2015 08:35:56</publishTime>
+    </File>
+    <File Include="LoginUI.aspx">
+      <publishTime>10/04/2015 16:41:38</publishTime>
+    </File>
+    <File Include="Management.aspx">
+      <publishTime>10/14/2015 16:54:51</publishTime>
+    </File>
+    <File Include="ManagementWpopup.aspx">
+      <publishTime>08/17/2015 12:24:45</publishTime>
+    </File>
+    <File Include="Mission.aspx">
+      <publishTime>10/07/2015 10:54:00</publishTime>
+    </File>
+    <File Include="Objective.aspx">
+      <publishTime>10/07/2015 10:55:51</publishTime>
+    </File>
+    <File Include="Ongoing.aspx">
+      <publishTime>09/29/2015 12:06:49</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>08/05/2015 15:02:19</publishTime>
+    </File>
+    <File Include="PayPerUseWithSecondMaster.aspx">
+      <publishTime>10/19/2015 11:59:09</publishTime>
+    </File>
+    <File Include="PopUpASPNETSR/jquery-1.10.3-ui.css">
+      <publishTime>08/12/2015 09:54:23</publishTime>
+    </File>
+    <File Include="PopUpASPNETSR/jquery-1.11.3.js">
+      <publishTime>08/12/2015 10:12:04</publishTime>
+    </File>
+    <File Include="PopUpASPNETSR/jquery.1.10.3-ui.js">
+      <publishTime>08/12/2015 09:57:15</publishTime>
+    </File>
+    <File Include="RegisterUI.aspx">
+      <publishTime>09/12/2015 12:06:27</publishTime>
+    </File>
+    <File Include="Registration.aspx">
+      <publishTime>09/14/2015 12:24:35</publishTime>
+    </File>
+    <File Include="Repository/HansaDB.edmx.diagram">
+      <publishTime>10/15/2015 09:02:40</publishTime>
+    </File>
+    <File Include="RiskManagementWithSecondMaster.aspx">
+      <publishTime>10/11/2015 11:26:46</publishTime>
+    </File>
+    <File Include="RoleSetup.aspx">
+      <publishTime>09/20/2015 10:04:32</publishTime>
+    </File>
+    <File Include="scriptsForPopUP/CSS/CSS.css">
+      <publishTime>08/09/2015 15:33:08</publishTime>
+    </File>
+    <File Include="scriptsForPopUP/scripts/jquery-1.3.2.min.js">
+      <publishTime>08/09/2015 14:28:21</publishTime>
+    </File>
+    <File Include="scriptsForPopUP/scripts/jquery.blockUI.js">
+      <publishTime>08/09/2015 14:28:21</publishTime>
+    </File>
+    <File Include="ShowRDLC.aspx">
+      <publishTime>09/07/2015 16:02:23</publishTime>
+    </File>
+    <File Include="SimpleModalPopup/jquery-1.8.9-ui.js">
+      <publishTime>08/12/2015 09:14:29</publishTime>
+    </File>
+    <File Include="SimpleModalPopup/jquery-ui.css.css">
+      <publishTime>08/12/2015 09:10:53</publishTime>
+    </File>
+    <File Include="SimpleModalPopup/jquery.1.7.2.min.js">
+      <publishTime>08/12/2015 09:12:38</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>08/20/2015 12:59:27</publishTime>
+    </File>
+    <File Include="SiteHome.Master">
+      <publishTime>10/18/2015 14:55:32</publishTime>
+    </File>
+    <File Include="SiteSecond.Master">
+      <publishTime>08/20/2015 12:59:50</publishTime>
+    </File>
+    <File Include="SoftServices.aspx">
+      <publishTime>08/16/2015 15:41:53</publishTime>
+    </File>
+    <File Include="SoftServicesWithSecondMaster.aspx">
+      <publishTime>10/14/2015 16:52:33</publishTime>
+    </File>
+    <File Include="SoftServicesWithSecondMasterCopy.aspx">
+      <publishTime>08/19/2015 15:37:22</publishTime>
+    </File>
+    <File Include="testReport.aspx">
+      <publishTime>09/06/2015 09:19:55</publishTime>
+    </File>
+    <File Include="tile-wide.png">
+      <publishTime>08/04/2015 08:37:21</publishTime>
+    </File>
+    <File Include="tile.png">
+      <publishTime>08/04/2015 08:37:21</publishTime>
+    </File>
+    <File Include="UI/Home.aspx">
+      <publishTime>08/06/2015 09:20:30</publishTime>
+    </File>
+    <File Include="Upcoming.aspx">
+      <publishTime>10/03/2015 09:01:13</publishTime>
+    </File>
+    <File Include="UserRoleAssaign.aspx">
+      <publishTime>09/20/2015 10:17:49</publishTime>
+    </File>
+    <File Include="UserSetupUI.aspx">
+      <publishTime>10/15/2015 08:59:23</publishTime>
+    </File>
+    <File Include="Vision.aspx">
+      <publishTime>10/07/2015 10:56:23</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/24/2015 22:53:27</publishTime>
+    </File>
+    <File Include="WebForm1.aspx">
+      <publishTime>08/05/2015 16:32:36</publishTime>
+    </File>
+    <File Include="WebForm2.aspx">
+      <publishTime>08/06/2015 08:28:09</publishTime>
+    </File>
+    <File Include="WebService1.asmx">
+      <publishTime>10/07/2015 08:42:47</publishTime>
+    </File>
+    <File Include="WhoWeAre.aspx">
+      <publishTime>10/07/2015 10:57:21</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

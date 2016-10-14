@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HansaDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="GroupCode" />
+    </Key>
+    <Property Name="GroupCode" Type="Int32" Nullable="false" />
+    <Property Name="GroupName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="GroupRole">
+    <Key>
+      <PropertyRef Name="GroupCode" />
+      <PropertyRef Name="RoleCode" />
+    </Key>
+    <Property Name="GroupCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RoleCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ParentID" Type="Int32" />
+    <Property Name="Caption" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ToolTip" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Location" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ModuleID" Type="Int32" Nullable="false" />
+    <Property Name="MenuOrder" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleCode" />
+    </Key>
+    <Property Name="RoleCode" Type="Int32" Nullable="false" />
+    <Property Name="RoleName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RoleDescription" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="RoleDetail" Relationship="Self.FK_RoleDetail_Role" FromRole="Role" ToRole="RoleDetail" />
+  </EntityType>
+  <EntityType Name="RoleDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MenuID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RoleCode" Type="Int32" Nullable="false" />
+    <Property Name="CanSelect" Type="Boolean" Nullable="false" />
+    <Property Name="CanInsert" Type="Boolean" Nullable="false" />
+    <Property Name="CanUpdate" Type="Boolean" Nullable="false" />
+    <Property Name="CanDelete" Type="Boolean" Nullable="false" />
+    <Property Name="CanSend" Type="Boolean" />
+    <Property Name="CanCheck" Type="Boolean" />
+    <Property Name="CanApprove" Type="Boolean" />
+    <Property Name="CanPreview" Type="Boolean" Nullable="false" />
+    <Property Name="AllChk" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Role" Relationship="Self.FK_RoleDetail_Role" FromRole="RoleDetail" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="GroupUsers">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="GroupCode" />
+    </Key>
+    <Property Name="UserID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GroupCode" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_RoleDetail_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="RoleDetail" Type="Self.RoleDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleCode" />
+      </Principal>
+      <Dependent Role="RoleDetail">
+        <PropertyRef Name="RoleCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HansaDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Employee" EntityType="Self.Employee" />
+    <EntitySet Name="Group" EntityType="Self.Group" />
+    <EntitySet Name="GroupRole" EntityType="Self.GroupRole" />
+    <EntitySet Name="Menu" EntityType="Self.Menu" />
+    <EntitySet Name="Role" EntityType="Self.Role" />
+    <EntitySet Name="RoleDetail" EntityType="Self.RoleDetail" />
+    <EntitySet Name="GroupUsers" EntityType="Self.GroupUsers" />
+    <AssociationSet Name="FK_RoleDetail_Role" Association="Self.FK_RoleDetail_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="RoleDetail" EntitySet="RoleDetail" />
+    </AssociationSet>
+    <EntitySet Name="UserRatings" EntityType="HansaDBModel.UserRatings" />
+    <EntitySet Name="User" EntityType="HansaDBModel.User" />
+    <EntitySet Name="UserActivationLink" EntityType="HansaDBModel.UserActivationLink" />
+  </EntityContainer>
+  <EntityType Name="UserRatings">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Int32" />
+    <Property Name="Comments" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="SecurityQuestion" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Answer" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="StatusID" Type="Int32" />
+    <Property Name="EntryUserID" Type="Int32" />
+    <Property Name="EntryDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdateUserID" Type="Int32" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+    <Property Name="IsAdmin" Type="Boolean" />
+    <Property Name="ThanaID" Type="Int16" />
+    <Property Name="DivisionID" Type="Int16" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="FirstName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CapchaCode" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IPAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DefaultAllViwerForCommon" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="UserActivationLink">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ActivationCode" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="SecurityQuestion" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Answer" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="EntryDate" Type="DateTime" Precision="3" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CapchaCode" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IPAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

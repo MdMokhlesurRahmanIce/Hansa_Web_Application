@@ -1,0 +1,583 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Hansa.Web.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Welcome to Hansa Management Ltd. </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <%--<link rel="apple-touch-icon" href="apple-touch-icon.png">--%>
+    <link rel="icon" href="Content/assets/images/PageImage/HansaLogo-Icon.png" />
+    <%--<link rel="icon" href="Content/assets/images/PageImage/UniqueGroupLogo-Icon.png" />--%>
+
+
+    <!-- Place favicon.ico in the root directory -->
+
+
+
+    <link rel="stylesheet" href="Content/assets/plugins/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--<script src="assets/css/font-awesome.min.css"></script>
+        <script src="assets/css/bootstrap.min.css"></script>-->
+
+    <link rel="stylesheet" href="Content/assets/css/style.css">
+    <script src="Content/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <script src="Content/assets/js/vendor/jquery-1.11.3.min.js"></script>
+
+    <%--     <script src="SimpleModalPopup/jquery.1.7.2.min.js"></script>
+    <script src="SimpleModalPopup/jquery-1.8.9-ui.js"></script>
+    <link href="SimpleModalPopup/jquery-ui.css.css" rel="stylesheet" />--%>
+
+
+
+    <header class="bodyheader">
+        <div class="top-bar">
+            <nav class="navbar">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" title=""><span class="fa fa-envelope"></span>contact@hansa.com</a></li>
+                            <li class="dropdown">
+                                <a href="#" title="" class="dropdown-toggle" data-toggle="dropdown">Languages: EN <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" title="">AR</a></li>
+                                    <li><a href="#" title="">SP</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="login.aspx"><span class="fa fa-user"></span>LOGIN</a></li>
+                            <li class="social-icons"><a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-linkedin"></span></a>
+                                <a href="#"><span class="fa fa-google-plus"></span></a>
+                                <a href="#"><span class="fa fa-youtube"></span></a>
+                                <a href="#"><span class="fa fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div class="header-bar">
+            <nav class="navbar">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs_example_navbar_collapse_2">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <%-- <a class="navbar-logo" href="#" title="#"><img src="Content/assets/images/logo.png" border="0" alt=""></a>--%>
+
+
+
+                        <%--  <div style="width:450px;height:100px; float:right;">
+                            <p style="font-size: 30px; font-style: bold; color: #0033FF;">HANSA MANAGEMENT LIMITED</p>
+                        </div>
+                        <div style="clear:both;"></div>--%>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-1">
+
+                            <a class="navbar-logo" href="Home.aspx" title="#">
+
+                                <img src="Content/assets/images/LogoImage/UniqueGroupLogo.png" border="0" alt="HansaLogo" width="140px;" height="100px;" /></a>
+
+
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-7" style="text-align: center;">
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs_example_navbar_collapse_2" runat="server">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <%--<li class="dropdown"><a href="Home.aspx" title="Home" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">HOME</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Background.aspx">BACKGROUND </a></li>
+                                    <li><a href="ManagementWpopup.aspx">MANAGEMENT </a></li>
+                                    
+                                    <li><a href="Home.aspx">TEAMS </a></li>
+                                    <li><a href="index3.html">CSR </a></li>
+                                </ul>
+                            </li>--%>
+                                    <li><a href="Home.aspx" title="Home">HOME</a></li>
+                                    <%--                            <li class="dropdown">
+                                <a href="Home.aspx" title="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">ABOUT</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="comming-soon.html">OBJECTIVE</a></li>
+                                    <li><a href="invoice.html">OPERATION PROCESS</a></li>
+                                    <li><a href="jobpage1.html">ONGOING PROJECTS</a></li>
+                                    <li><a href="jobpage2.html">UPCOMING PROJECTS</a></li>
+                                </ul>
+                            </li>--%>
+
+                                    <li><a href="About.aspx" title="ABOUT">ABOUT</a></li>
+
+                                    <li class="dropdown"><a href="#" title="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">SERVICES</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="SoftServicesWithSecondMaster.aspx">SOFT SERVICES</a></li>
+                                            <li><a href="HardServicesWithSecondMaster.aspx">HARD SERVICES</a></li>
+                                            <li><a href="PayPerUseWithSecondMaster.aspx">PAY PER USE</a></li>
+                                            <li><a href="RiskManagementWithSecondMaster.aspx">RISK MANAGEMENT</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown"><a href="#" title="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">CUSTOMER CORNER</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="blog.html">USER ID</a></li>
+                                            <li><a href="blog-post.html">PROJECT NAME</a></li>
+                                            <li><a href="blog.html">OBSERVATIONS</a></li>
+                                            <li><a href="blog-post.html">FEEDBACK</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown"><a href="#" title="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" onclick=" setHeightOfContact()" >CONTACT US</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="blog.html">FAQ</a></li>
+                                            <li><a href="blog-post.html">E-MAIL</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="dropdown">
+                                        <a href="#" title="" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-search"></span></a>
+                                        <div class="dropdown-menu search-dropdown">
+                                            <form action="">
+                                                <div class="input-group search-form">
+                                                    <input type="text" class="form-control" placeholder="Search">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-theme" type="button"><span class="fa fa-search"></span></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-2">
+
+                            <a class="navbar-logo" href="Home.aspx" title="#">
+                                <img src="Content/assets/images/HansaLogoOriginal.jpg" border="0" alt="HansaLogo" width="180px;" height="130px;" />
+
+                            </a>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-12" style="text-align: center">
+                            <p style="font-size: 55px; font-weight: bold; color: black; font-family: Edwardian Script ITC;">Hansa Management Limited</p>
+                        </div>
+                    </div>
+
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <div class="main-slider">
+        <ul>
+            <li>
+                <%--<img src="Content/assets/images/Sliders/ACROPOLIS%20day.jpg" />--%>
+                <img src="Content/assets/images/Sliders/img1.jpg" alt="" />
+            </li>
+
+            <li>
+                <img src="Content/assets/images/Sliders/facilities-management.jpg" alt="" />
+            </li>
+
+            <li>
+                <img src="Content/assets/images/Sliders/FM_Cofely01567_HD-bandeau.jpg" alt="" />
+            </li>
+
+
+            <%--      <li>
+ 
+                 <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt%201.jpg" />
+            </li>
+            <li>
+ 
+                <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt2.jpg" />
+
+            </li>
+            <li>
+                 
+                 <img src="Content/assets/images/Sliders/BORAK%20ZOHIR%20TOWER_01a.jpg" />
+
+            </li>
+            
+             <li>
+  
+                <img src="Content/assets/images/Sliders/BORAK%20ZOHIR%20TOWER_02b.jpg" />
+
+            </li>--%>
+        </ul>
+
+        <%-- <ul>
+            <li>
+                <img src="Content/assets/images/Sliders/ACROPOLIS%20day.jpg" /> 
+                <img src="Content/assets/images/Sliders/ACROPOLIS(1).jpg" /> 
+            </li>
+            
+           <li> 
+               <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt%201%20night.jpg" />  
+               <img src="Content/assets/images/Sliders/ACROPOLIS(1).jpg" /> 
+           </li>
+
+             <li> 
+                 <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt%201.jpg" /> 
+                 <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt%201%20night.jpg" /> 
+           </li>
+              
+
+             <li>
+                 <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt2.jpg" />
+                 <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt%201.jpg" />
+            </li>
+            <li>
+                <img src="Content/assets/images/Sliders/BORAK%20ZOHIR%20TOWER_01a.jpg" />
+                <img src="Content/assets/images/Sliders/BORAK%20MEHNUR%20opt2.jpg" />
+
+            </li>
+            <li>
+                <img src="Content/assets/images/Sliders/BORAK%20ZOHIR%20TOWER_02b.jpg" />
+                 <img src="Content/assets/images/Sliders/BORAK%20ZOHIR%20TOWER_01a.jpg" />
+
+            </li>
+            
+             <li>
+                 <img src="Content/assets/images/Sliders/ACROPOLIS%20day.jpg" /> 
+                <img src="Content/assets/images/Sliders/BORAK%20ZOHIR%20TOWER_02b.jpg" />
+
+            </li> 
+             
+        </ul>--%>
+    </div>
+
+    <div class="container">
+
+        <div class="page-section">
+            <h2 class="with-borderline"><span>Our Services</span></h2>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="news-post">
+                        <div class="post-thumbnail" style="background: #00cac6 none repeat scroll 0 0; height: 250px;">
+                            <figure>
+                                <img src="Content/assets/images/PageImage/cleaning.png" alt="" />
+                            </figure>
+                            <div>
+                                <br />
+                                <br />
+                                <br />
+                            </div>
+                            <p style="color: #fff; font-family: Open Sans,sans-serif; font-size: 18px; font-weight: 700; line-height: 24px; text-align: center; position: relative; text-transform: uppercase; z-index: 1;">
+                                <%-- Housekeeping / Cleaning--%>
+                                Soft Services
+
+                            </p>
+                            <span></span>
+                            <%--<div class="post-date">
+                                        <h4>Cleaning</h4>
+                                        <span>April 2015</span>
+                                    </div>--%>
+                        </div>
+                        <div class="post-caption" style="background: #f8f8f8 none repeat scroll 0 0;">
+                            <%--<div class="post-info"><span class="fa fa-user"></span>Posted by: Author</div>--%>
+                            <h3><a href="SoftServicesWithSecondMaster.aspx" title="">Lorem ipsum dolor sit amet</a></h3>
+                            <p>Dicant nostrum cum te. An sint choro ius, cibo tractatos usu at, copiosae invenire eu pri. Ex his purto veri discere, ut cum labore eripuit insolens.</p>
+                        </div>
+                    </div>
+                    <!-- /.news-post -->
+                </div>
+                <div class="col-sm-3">
+                    <div class="news-post">
+                        <div class="post-thumbnail" style="background: #56bedf none repeat scroll 0 0; height: 250px;">
+                            <figure>
+                                <img src="Content/assets/images/PageImage/security.png" alt="" />
+                            </figure>
+                            <div>
+                                <br />
+                                <br />
+                                <br />
+                            </div>
+                            <p style="color: #fff; font-family: Open Sans,sans-serif; font-size: 18px; font-weight: 700; line-height: 24px; text-align: center; position: relative; text-transform: uppercase; z-index: 1;">
+                                <%--Security--%>
+                                Hard Services
+
+                            </p>
+                            <span></span>
+                            <%--<div class="post-date">
+                                        <h4>Cleaning</h4>
+                                        <span>April 2015</span>
+                                    </div>--%>
+                        </div>
+                        <div class="post-caption" style="background: #f8f8f8 none repeat scroll 0 0;">
+                            <%--<div class="post-info"><span class="fa fa-user"></span>Posted by: Author</div>--%>
+                            <h3><a href="HardServicesWithSecondMaster.aspx" title="">Lorem ipsum dolor sit amet</a></h3>
+                            <p>Dicant nostrum cum te. An sint choro ius, cibo tractatos usu at, copiosae invenire eu pri. Ex his purto veri discere, ut cum labore eripuit insolens.</p>
+                        </div>
+                    </div>
+                    <!-- /.news-post -->
+                </div>
+                <div class="col-sm-3">
+                    <div class="news-post">
+                        <div class="post-thumbnail" style="background: #6bc141 none repeat scroll 0 0; height: 250px;">
+                            <figure>
+                                <img src="Content/assets/images/PageImage/engineering.png" alt="" />
+                            </figure>
+                            <div>
+                                <br />
+                                <br />
+                                <br />
+                            </div>
+                            <p style="color: #fff; font-family: Open Sans,sans-serif; font-size: 18px; font-weight: 700; line-height: 24px; text-align: center; position: relative; text-transform: uppercase; z-index: 1;">
+                                <%-- Engineering--%>
+                                Pay Per Use
+
+                            </p>
+                            <span></span>
+                            <%--<div class="post-date">
+                                        <h4>Cleaning</h4>
+                                        <span>April 2015</span>
+                                    </div>--%>
+                        </div>
+                        <div class="post-caption" style="background: #f8f8f8 none repeat scroll 0 0;">
+                            <%--<div class="post-info"><span class="fa fa-user"></span>Posted by: Author</div>--%>
+                            <h3><a href="PayPerUseWithSecondMaster.aspx" title="">Lorem ipsum dolor sit amet</a></h3>
+                            <p>Dicant nostrum cum te. An sint choro ius, cibo tractatos usu at, copiosae invenire eu pri. Ex his purto veri discere, ut cum labore eripuit insolens.</p>
+                        </div>
+                    </div>
+                    <!-- /.news-post -->
+                </div>
+
+                <%--                 <div class="col-sm-4">
+ 
+                </div> --%>
+
+                <div class="col-sm-3">
+                    <div class="news-post">
+                        <div class="post-thumbnail" style="background: #c6d130 none repeat scroll 0 0; height: 250px;">
+                            <figure>
+                                <img src="Content/assets/images/PageImage/landscaping.png" alt="" />
+                            </figure>
+                            <div>
+                                <br />
+                                <br />
+                                <br />
+                            </div>
+                            <p style="color: #fff; font-family: Open Sans,sans-serif; font-size: 18px; font-weight: 700; line-height: 24px; text-align: center; position: relative; text-transform: uppercase; z-index: 1;">
+                                <%--Landscaping--%>
+                                Risk Management
+                            </p>
+                            <span></span>
+                            <%--<div class="post-date">
+                                        <h4>Cleaning</h4>
+                                        <span>April 2015</span>
+                                    </div>--%>
+                        </div>
+                        <div class="post-caption" style="background: #f8f8f8 none repeat scroll 0 0;">
+                            <%--<div class="post-info"><span class="fa fa-user"></span>Posted by: Author</div>--%>
+                            <h3><a href="RiskManagementWithSecondMaster.aspx" title="">Lorem ipsum dolor sit amet</a></h3>
+                            <p>Dicant nostrum cum te. An sint choro ius, cibo tractatos usu at, copiosae invenire eu pri. Ex his purto veri discere, ut cum labore eripuit insolens.</p>
+                        </div>
+                    </div>
+                    <!-- /.news-post -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            //alert("ddd");
+
+        });
+
+        function setHeightOfContact() {
+            $('html,body').animate({ scrollTop: 12000 }, 'slow');
+            // alert("ggg");
+
+        }
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <asp:Label ID="lblShowNavID" runat="server" Text=""></asp:Label>
+
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+
+
+
+    </form>
+
+
+
+    <div class="container">
+
+        <div class="page-section">
+            <h2 class="with-borderline"><span>Our Clients</span></h2>
+            <ul class="clients-list">
+                <li>
+                    <img src="Content/assets/images/client1.png" alt=""></li>
+                <li>
+                    <img src="Content/assets/images/client2.png" alt=""></li>
+                <li>
+                    <img src="Content/assets/images/client3.png" alt=""></li>
+                <li>
+                    <img src="Content/assets/images/client4.png" alt=""></li>
+                <li>
+                    <img src="Content/assets/images/client5.png" alt=""></li>
+                <li>
+                    <img src="Content/assets/images/client6.png" alt=""></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="green-bar">
+        <div class="container">
+            <%--<a href="#" title="" class="btn hidden-xs fr btn-white">Purchase now!</a>--%>
+            <h2>Strong message that makes people take action instantly!</h2>
+            <%--<a href="#" title="" class="btn hidden-lg hidden-sm hidden-md fr btn-white">Purchase now!</a>--%>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2><a href="Home.aspx" title="">
+                        <span>
+                            <img src="Content/assets/images/LogoImage/HansaLogo.png" alt="" /></span>
+
+                    </a></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, te vel illud clita tempor. Commodo laoreet mei no. 
+                        Vis ea mollis mediocrem voluptatum, ad harum nominati duo.
+                    </p>
+                    <p class="social-icons">
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-linkedin"></span></a>
+                        <a href="#"><span class="fa fa-google-plus"></span></a>
+                        <a href="#"><span class="fa fa-youtube"></span></a>
+                        <a href="#"><span class="fa fa-instagram"></span></a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h2>Contact info</h2>
+                    <ul class="related-icons-list">
+                        <li><span class="fa fa-map-marker"></span>99 Barnard St - Suite 111<br>
+                            United States - GA 22222 </li>
+                        <li><span class="fa fa-phone"></span>P: 3333 222 1111
+                            <br>
+                            F: 3333 222 1111</li>
+                        <li><span class="fa fa-envelope"></span><a href="mailto:support@hansa.com" title="">support@hansa.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h2>Subscribe</h2>
+                    <p>Lorem ipsum dolor sit amet, te vel illud clita tempor. Commodo laoreet mei no. vel.</p>
+                    <form action="">
+                        <div class="input-group input-group-lg subscription-form">
+                            <input type="text" class="form-control" placeholder="Email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-theme" type="button"><span class="fa fa-check"></span></button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+    </footer>
+    <div class="footer-bottom">&copy;Powered by <a href="https://UniqueGroupIT.com">UniqueGroupIT.com</a></div>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script>window.jQuery || document.write('<script src="Content/assets/js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+    <script src="Content/assets/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="Content/assets/plugins/jquery.fancybox.pack.js"></script>
+    <script src="Content/assets/plugins/jquery.bxslider.min.js"></script>
+    <script src="Content/assets/js/plugins.js"></script>
+    <script src="Content/assets/js/main.js"></script>
+    <script>
+        $(function () {
+            $('.slider-gallery').bxSlider({
+                auto: true,
+                slideWidth: 370,
+                slideMargin: $(window).width() > 767 ? 30 : 0,
+                pager: false,
+                minSlides: $(window).width() > 767 ? 3 : 1,
+                maxSlides: $(window).width() > 767 ? 3 : 1,
+                moveSlides: 1,
+                nextSelector: '#slider-next',
+                prevSelector: '#slider-prev',
+                nextText: '&#xf105;',
+                prevText: '&#xf104;',
+            })
+            $('.main-slider ul').bxSlider({
+                auto: true,
+                pager: false,
+                nextText: '&#xf105;',
+                prevText: '&#xf104;',
+            })
+            $(".fancybox").fancybox();
+        })
+
+
+    </script>
+</body>
+</html>

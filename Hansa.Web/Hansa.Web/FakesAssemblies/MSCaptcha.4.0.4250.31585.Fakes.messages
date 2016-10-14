@@ -1,0 +1,7 @@
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\Hansa.Web\Fakes\MSCaptcha.fakes : warning : Cannot generate shim for MSCaptcha.CaptchaControl+arithmeticOperation: type is an enum.
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\Hansa.Web\Fakes\MSCaptcha.fakes : warning : Cannot generate shim for MSCaptcha.CaptchaControl+cacheType: type is an enum.
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\Hansa.Web\Fakes\MSCaptcha.fakes : warning : Cannot generate shim for MSCaptcha.CaptchaControl+clientHashingAlgorithm: type is an enum.
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\Hansa.Web\Fakes\MSCaptcha.fakes : warning : Cannot generate shim for MSCaptcha.CaptchaImage+arithmeticOperation: type is an enum.
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\Hansa.Web\Fakes\MSCaptcha.fakes : warning : Cannot generate shim for MSCaptcha.CaptchaImage+backgroundNoiseLevel: type is an enum.
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\Hansa.Web\Fakes\MSCaptcha.fakes : warning : Cannot generate shim for MSCaptcha.CaptchaImage+fontWarpFactor: type is an enum.
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\Hansa.Web\Fakes\MSCaptcha.fakes : warning : Cannot generate shim for MSCaptcha.CaptchaImage+lineNoiseLevel: type is an enum.

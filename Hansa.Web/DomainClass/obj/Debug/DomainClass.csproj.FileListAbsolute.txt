@@ -1,0 +1,16 @@
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\DomainClass\bin\Debug\DomainClass.dll
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\DomainClass\bin\Debug\DomainClass.pdb
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\DomainClass\bin\Debug\EntityFramework.dll
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\DomainClass\bin\Debug\EntityFramework.SqlServer.dll
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\DomainClass\bin\Debug\EntityFramework.xml
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\DomainClass\bin\Debug\EntityFramework.SqlServer.xml
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\DomainClass\obj\Debug\DomainClass.dll
+E:\MMR\HANSA\Hansha_PopUPprblm\Hansha_PopUPprblm\Hansa.Web\DomainClass\obj\Debug\DomainClass.pdb
+D:\MVC4_NZ\Hansa.Web_LIVE_SERVER\Hansa.Web_LIVE_SERVER\Hansa.Web\DomainClass\bin\Debug\DomainClass.dll
+D:\MVC4_NZ\Hansa.Web_LIVE_SERVER\Hansa.Web_LIVE_SERVER\Hansa.Web\DomainClass\bin\Debug\DomainClass.pdb
+D:\MVC4_NZ\Hansa.Web_LIVE_SERVER\Hansa.Web_LIVE_SERVER\Hansa.Web\DomainClass\bin\Debug\EntityFramework.dll
+D:\MVC4_NZ\Hansa.Web_LIVE_SERVER\Hansa.Web_LIVE_SERVER\Hansa.Web\DomainClass\bin\Debug\EntityFramework.SqlServer.dll
+D:\MVC4_NZ\Hansa.Web_LIVE_SERVER\Hansa.Web_LIVE_SERVER\Hansa.Web\DomainClass\bin\Debug\EntityFramework.xml
+D:\MVC4_NZ\Hansa.Web_LIVE_SERVER\Hansa.Web_LIVE_SERVER\Hansa.Web\DomainClass\bin\Debug\EntityFramework.SqlServer.xml
+D:\MVC4_NZ\Hansa.Web_LIVE_SERVER\Hansa.Web_LIVE_SERVER\Hansa.Web\DomainClass\obj\Debug\DomainClass.dll
+D:\MVC4_NZ\Hansa.Web_LIVE_SERVER\Hansa.Web_LIVE_SERVER\Hansa.Web\DomainClass\obj\Debug\DomainClass.pdb
